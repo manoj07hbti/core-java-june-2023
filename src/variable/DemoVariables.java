@@ -33,6 +33,7 @@ public class DemoVariables {
         System.out.println("Printing ram: " +ram);
 
 
+        System.out.println("This is example for latest code in git..");
     }
 
 
