@@ -36,6 +36,15 @@ public class DemoVariables {
         System.out.println("This is example for latest code in git..");
         System.out.println("This is example for latest code in git..");
 
+        double salary1;
+        salary1=35000.75;
+        System.out.println("Printing salary: "+salary1);
+
+        int ram1;
+        ram1=8;
+        System.out.println("Printing ram: " +ram1);
+
+
     }
 
 
