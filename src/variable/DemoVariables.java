@@ -45,6 +45,8 @@ public class DemoVariables {
         System.out.println("Printing ram: " +ram1);
 
 
+        System.out.println("Hello , this is demo commit");
+
     }
 
 
