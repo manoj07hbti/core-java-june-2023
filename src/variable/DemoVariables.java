@@ -27,7 +27,7 @@ public class DemoVariables {
 
         double salary;
         salary=35000.75;
-        System.out.println("Printing salary: "+salary);
+        System.out.println("Printing salary:."+salary);
 
         int ram;
         ram=8;
