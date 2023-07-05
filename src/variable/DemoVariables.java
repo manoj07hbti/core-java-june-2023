@@ -4,6 +4,8 @@ public class DemoVariables {
 
     public static void main(String[] args) {
 
+
+
        //  SYNTAX : Datatype varName;  variable declaration
 
         String name;  // we have declared a variable name which will store String data
