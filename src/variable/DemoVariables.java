@@ -40,9 +40,7 @@ public class DemoVariables {
         salary1=35000.75;
         System.out.println("Printing salary: "+salary1);
 
-        int ram1;
-        ram1=8;
-        System.out.println("Printing ram: " +ram1);
+
 
 
     }
