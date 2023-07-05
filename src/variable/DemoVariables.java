@@ -1,5 +1,7 @@
 package variable;
 
+import java.sql.SQLOutput;
+
 public class DemoVariables {
 
     public static void main(String[] args) {
@@ -45,7 +47,9 @@ public class DemoVariables {
         System.out.println("Printing ram: " +ram1);
 
 
-        System.out.println("Hello , this is demo commit");
+        System.out.println("This is demo commit");
+        System.out.println("This is demo commit to check the update");
+
 
     }
 
