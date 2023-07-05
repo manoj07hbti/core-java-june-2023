@@ -18,14 +18,14 @@ public class DemoVariables {
 
         double price; // we have declared price variable to store decimal data
         price=234.45; // assigned 234.45 value to price variable
-        System.out.println("Printing price: "+price);
+        System.out.println("Printing price is: "+price);
 
         String cityName;
         cityName="Agra";
         System.out.println("Printing cityName: "+cityName);
 
         double salary;
-        salary=35000.75;
+        salary=37000.75;
         System.out.println("Printing salary: "+salary);
 
         int ram;
