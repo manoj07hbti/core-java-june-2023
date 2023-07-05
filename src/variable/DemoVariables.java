@@ -10,7 +10,7 @@ public class DemoVariables {
         // SYNTAX: varName=value;
         name="Jatin" ;  // assigned Jatin value to name variable, String value will always be in double quot " "
 
-        System.out.println("Printing variable : " +name);
+        System.out.println("Printing variable  is : " +name);
 
         int age; // we have declared a variable age which will store integer data
         age=21;  // assigned 21 value to age variable
