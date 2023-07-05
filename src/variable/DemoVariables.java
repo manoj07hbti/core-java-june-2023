@@ -19,6 +19,7 @@ public class DemoVariables {
         double price; // we have declared price variable to store decimal data
         price=234.45; // assigned 234.45 value to price variable
         System.out.println("Printing price: "+price);
+        System.out.println("Printing price: "+price);
 
         String cityName;
         cityName="Agra";
