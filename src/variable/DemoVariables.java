@@ -43,7 +43,7 @@ public class DemoVariables {
         int ram1;
         ram1=8;
         System.out.println("Printing ram: " +ram1);
-
+learn by mistake
 
     }
 
