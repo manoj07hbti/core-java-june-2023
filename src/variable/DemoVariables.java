@@ -49,6 +49,8 @@ public class DemoVariables {
 
         System.out.println("This is demo commit");
         System.out.println("This is demo commit to check the update");
+        System.out.println("Again checking for update");
+
 
 
     }
