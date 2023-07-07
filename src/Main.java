@@ -4,11 +4,4 @@ public class Main {
 
     System.out.println("Hello this is demo comit");}{
 
-
-
-
-
-
-
-
 }
