@@ -47,6 +47,9 @@ public class DemoVariables {
         System.out.println("Printing ram: " +ram1);
 
 
+
+
+
     }
 
 
