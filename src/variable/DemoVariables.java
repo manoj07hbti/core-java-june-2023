@@ -48,6 +48,8 @@ public class DemoVariables {
         int classname;
         classname=4;
         System.out.println("variable class " + classname);
+
+
     }
 
 
