@@ -29,6 +29,16 @@ public class Demo_Variable{
         System.out.println("Printing Condition---->"  +Condition);
         boolean Condition_Second=false;
         System.out.println("Printing Condition Second--->"  +Condition_Second);
+        long Country_Code=+91;
+        System.out.println("Printing Country Code------>"  +Country_Code);
+
+        String MY_friend_Name="Bhura Singh Bade kua";
+        System.out.println("Printing MY Friend Name is---->" +MY_friend_Name);
+
+
+
+
+
 
     }
 }
