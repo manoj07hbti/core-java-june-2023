@@ -14,6 +14,10 @@ public class DemoVariableDay1 {
 
         System.out.println("My Country Name is :"+countryName);
 
+        countryName="US"; // reuse variable and stored new value
+
+        System.out.println("My updated Country Name is :"+countryName);
+
         int age; // we have declared variable age with int datatype
 
         age=23;
