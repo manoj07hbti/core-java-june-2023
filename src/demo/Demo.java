@@ -12,7 +12,7 @@ public class Demo {
             String JoblocationName = "pune";
             String companyName = "Amazon";
             String myName = "day";
-            System.out.println("printing cityName" + cityName);
+            System.out.println("printing cityName" + cityName);;
             System.out.println("printing AdressName" + AdressName);
             System.out.println("printing CourseName" + CourseName);
             System.out.println("printing JoblocationName" + JoblocationName);
