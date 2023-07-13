@@ -66,6 +66,8 @@ public class DemoVariableDay1 {
         cost=924.34;
         System.out.println("My Pen cost is "+ 924.34);
 
+        
+
 
 
 
