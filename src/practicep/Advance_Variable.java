@@ -18,6 +18,10 @@ public class Advance_Variable {
             int square3=c*c;
             System.out.println(square3);
 
+            int d=12;
+                    int square4=d*d;
+                System.out.println(square4);
+
             int k=3;
             int cube1=3*3*3;
             System.out.println(cube1);
@@ -33,6 +37,7 @@ public class Advance_Variable {
             double number1=360;
             double number2=600;
             double percentage3=(number/total)*100;
+
 
 
         }
