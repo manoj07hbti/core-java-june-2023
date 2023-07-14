@@ -1,6 +1,6 @@
 package practicep;
 
-public class ExampleVeriable {
+public class Examples {
 
     public static void main(String[] args) {
         String name= "neha";
@@ -39,7 +39,7 @@ public class ExampleVeriable {
         System.out.println("my time is 22.12:"+time);
 
 
-     Boolean flag;
+        Boolean flag;
         flag=false;
         System.out.println("flag is:"+flag);
 
@@ -47,3 +47,4 @@ public class ExampleVeriable {
     }
 
 }
+
