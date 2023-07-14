@@ -63,5 +63,24 @@ public class Variable_Assignment {
         oxygen=21;
         System.out.println("percentage of oxygen on Earth is " + oxygen);
 
+        String countryname;
+        countryname="india";
+        System.out.println("printing country name " +countryname);
+
+        countryname="china";
+        System.out.println("printing other countryname " +countryname);
+
+        countryname="ameica";
+        System.out.println("printing usa name " +countryname);
+
+        int a=1;
+        int b=2;
+        int sum =a+b;
+        System.out.println("addition of a and b is " + sum);
+
+        int i=1;
+        i++;
+        System.out.println("increament of i is " +i );
+
     }
 }
