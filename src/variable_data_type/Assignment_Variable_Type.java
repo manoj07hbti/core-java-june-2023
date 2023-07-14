@@ -40,8 +40,10 @@ public class Assignment_Variable_Type {
 
         int t=6;
         int m=7;
-        double div=(double) t/m;
+        double div=(double) t/m; // percentage;
         System.out.println("Printing Division---->"  +div);
+        double percentage=(double) t*m/100;
+        System.out.println("Printing percentage--->"  +percentage);
 
 
 
