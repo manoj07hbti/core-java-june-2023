@@ -126,6 +126,12 @@ public class Assignment {
         n-=m;
         System.out.println("substraction of n and m " + n);
 
+        int number =2;
+        int square =number * number;
+        System.out.println("the square of " + number  + " is : " + square);
+
+
+
 
 
 
