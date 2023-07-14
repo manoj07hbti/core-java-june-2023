@@ -39,7 +39,15 @@ int bc=0;
 int acbc=ac*bc;
 System.out.println("Multiplication of ac and bc "+acbc);
 
+int ad=8;
+int da=4;
+int divide=ad/da;
+System.out.println("Dividation of ad and da is "+divide);
 
+int mango=800;
+int apple=100;
+int result=mango/apple;
+System.out.println("Result is "+result);
 
 
 
