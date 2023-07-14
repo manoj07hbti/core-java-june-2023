@@ -23,5 +23,6 @@ public class AssignmentVariableDay2 {
             int doublePercentage = (600*10/100);
             System.out.println("Calculating ten Percentage from obtained marks by the student is "+doublePercentage);
 
+
     }
 }
