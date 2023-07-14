@@ -2,43 +2,40 @@ package variable;
 
 public class Cubevariable {
     public static void main(String[] args) {
-        int  number =2;
-        int square =number * number;
-        System.out.println("the square of " + number  + " is : " + square);
+        int number=2;
+        int cube=number*number*number;
+        System.out.println("The cube of " + number + " is : " + cube);
 
-        number =3;
-        square =number * number;
-        System.out.println("the square of " + number + " is : " + square );
+        number=3;
+        cube=number*number*number;
+        System.out.println("The cube of " + number + " is : " +cube);
 
-        number= 4;
-        square= number*number;
-        System.out.println("the square of 4 is : " +square);
+        number=4;
+        cube=number*number*number;
+        System.out.println("The cube of " + number + " is : " + cube);
 
-        int a=5;
-        int square1 =a*a;
-        System.out.println("the square of 5 is : " + square1);
+        number=5;
+        cube=number*number*number;
+        System.out.println("The cube of " + number + " is : " + cube);
 
         number=6;
-        square=number*number;
-        System.out.println("the square of " +number + " is : " + square);
+        cube=number*number*number;
+        System.out.println(" The cube of " + number + " is :" + cube);
 
-        int b=7;
-        int square2= b*b;
-        System.out.println("the square of 7 is : " + square2);
+        number=7;
+        cube=number*number*number;
+        System.out.println("The cube of " + number + " is :  " +  cube);
 
         number=8;
-        square= number*number;
-        System.out.println("the square of " + number + " is : " + square);
+        cube=number*number*number;
+        System.out.println(" The cube of " + number + " is : " + cube);
 
         number=9;
-        square= number*number;
-        System.out.println("the square of " + number + " is : " + square);
+        cube= number*number*number;
+        System.out.println(" The cube of " + number + " is :  " + cube);
 
         number=10;
-        square=number*number;
-        System.out.println("the square of " +number + " is : " +square);
+        cube= number*number*number;
+        System.out.println("The cube of " + number + " is :  " + cube);
     }
 }
-
-
-
