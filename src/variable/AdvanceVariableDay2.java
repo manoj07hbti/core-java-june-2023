@@ -36,11 +36,11 @@ public class AdvanceVariableDay2 {
         int x=4;
         int y=7;
 
-        x+=y; // x=x+y ;
+        x+=y; // x=x+y ; // 4+7=11
 
-        System.out.println("Printing X: "+x);
+        System.out.println("Printing X: "+x); // 11
 
-        x-=y; //x=x-y
+        x-=y; //x=x-y  = 11-7 = 4
 
         System.out.println(" Printing x after minus : "+x);
 
