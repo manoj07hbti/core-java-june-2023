@@ -1,8 +1,7 @@
 package variable;
 
-public class square_variable {
+public class Cubevariable {
     public static void main(String[] args) {
-
         int  number =2;
         int square =number * number;
         System.out.println("the square of " + number  + " is : " + square);
@@ -40,3 +39,6 @@ public class square_variable {
         System.out.println("the square of " +number + " is : " +square);
     }
 }
+
+
+
