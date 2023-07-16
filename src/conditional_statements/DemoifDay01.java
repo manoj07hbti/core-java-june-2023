@@ -6,11 +6,6 @@ public class DemoifDay01 {
 
         //if statements
         // marks greater or equal 60 :  first division
-        // marks less than 33  : not cleared exam
-        // price greater than 5000:  costly product
-        // price less than 5000 : average price product
-        // country : INDIA ----> You are indian
-        //                 ----> you are not indian
 
         int mark = 60;
 
@@ -19,16 +14,16 @@ public class DemoifDay01 {
 
             System.out.println("Then the person has pass in first division");
         }
-        int marks = 33;
+        int marks = 33;// marks less than 33  : not cleared exam
 
         if (marks > 30) ;
         {
 
             System.out.println("Then the person is not clear the exam");
         }
-        int price = 5000;
+        int price = 5000;// price greater than 5000:  costly product
 
-        if(price>5100) ;
+        if(price>5100) ;// price less than 5000 : average price product
         {
 
             System.out.println("Its Costly Product");
@@ -40,7 +35,8 @@ public class DemoifDay01 {
             System.out.println("Its average product");
         }
 
-        String country = "India";
+        String country = "India"; // country : INDIA ----> You are indian
+        //                 ----> you are not indian
 
         if(country == "India") {
             System.out.println("You are India");
