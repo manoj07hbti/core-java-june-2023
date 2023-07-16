@@ -4,11 +4,15 @@ public class If_Eals2ndclass {
 
     public static void main(String[] args) {
 
-        int marks = 33; // frist devision
+        int marks = 60; // frist devision
 
-        if (marks < 60) {
+        if (marks <= 60) {
 
-            System.out.println("exam is cleard");
+            System.out.println("prnting frist devesion grater then 60");
+        }
+        if (marks > 33) {
+
+            System.out.println("printing third devesion");
         } else {
 
             System.out.println("not clear exam");

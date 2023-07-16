@@ -9,7 +9,7 @@ public class IfAndEalsclass {
         int mark = 33; // then print not exam clear
 
         int price = 5000; // then print pric is high
-        int pric = 5000; // then print avarage price
+        // then print avarage price
         if (marks >= 60) {
 
             System.out.println("print frist devision");
