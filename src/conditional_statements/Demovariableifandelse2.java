@@ -17,6 +17,7 @@ public class Demovariableifandelse2 {
 
      if(price<5000);
      System.out.println("this product price is average");
+
      }
      }
      }
