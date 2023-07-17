@@ -7,5 +7,6 @@ public class Demo10 {
         System.out.println("Pandya dynasty");
         System.out.println("Gupta dynasty");
         System.out.println("Rashtrakuta dynasty");
+        System.out.println("Ming dynasty");
     }
 }
