@@ -28,5 +28,6 @@ public class DemoNestedIf {
         } else {
             System.out.println("Put the right product value");
         }
+
     }
 }
