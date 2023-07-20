@@ -62,5 +62,15 @@ public class Nested_if {
         }else{
             System.out.println("Enter the valid number");
         }
+        number=30;
+        if(number>0) {
+            if (number % 3 == 0) {
+                System.out.println("number is divisible by 3 : " + number);
+            } else {
+                System.out.println("number is not divisible by : " + number);
+            }
+        }else{
+            System.out.println("Enter the valid number");
+        }
     }
 }
