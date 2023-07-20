@@ -18,7 +18,7 @@ public class Demo_And_Operator {
 
        section = "Arts";
 
-       if (marks>=60 && section=="Arts"){
+       if (marks>=60 && section=="Science"){
 
            System.out.println("You are passed first division with arts.");
 
