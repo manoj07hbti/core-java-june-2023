@@ -1,19 +1,17 @@
 package conditional_statement;
 
-public class DemoSwitch {
-
-    public static void main(String args []){
-
+public class Demo_Switch {
+    public static void main(String args[]) {
         int month = 7;
 
-        switch (month){
+        switch (month) {
 
             case 1:
                 System.out.println("January");
                 break;
             case 2:
                 System.out.println("February");
-                 break;
+                break;
             case 3:
                 System.out.println("March");
                 break;
@@ -25,19 +23,19 @@ public class DemoSwitch {
                 break;
             case 6:
                 System.out.println("June");
-                 break;
+                break;
             case 7:
                 System.out.println("July");
-                 break;
+                break;
             case 8:
                 System.out.println("August");
-                 break;
+                break;
             case 9:
                 System.out.println("September");
-                 break;
+                break;
             case 10:
                 System.out.println("October");
-                 break;
+                break;
             case 11:
                 System.out.println("November");
                 break;
@@ -51,3 +49,5 @@ public class DemoSwitch {
 
     }
 }
+
+
