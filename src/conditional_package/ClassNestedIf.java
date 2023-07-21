@@ -67,6 +67,8 @@ public class ClassNestedIf {
             System.out.println("you are not eligible for voting in up....false");
         }
 
+
+
     }
 
 }
