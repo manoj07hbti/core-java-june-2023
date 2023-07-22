@@ -17,9 +17,9 @@ public class Fristoperater {
             System.out.println(" student is not science baground");
         }
 // TRUE AND FALSE STATMENT
-
+marks = 55;
         Subject = "science";
-        if (marks < 55 && Subject == "science") {
+        if (marks >= 60 && Subject == "science") {
 
 
             System.out.println("TRUE:student is science baground");
@@ -28,7 +28,7 @@ public class Fristoperater {
         }
 
 // FALSE AND TRUE STATMENT
-        marks = 60;
+        marks = 65;
         if (marks >= 60 && Subject == "art") {
 
 
@@ -39,8 +39,8 @@ public class Fristoperater {
 // FALSE && FALSE STATMENT
 
         Subject = "art";
-        marks = 60;
-        if (marks < 60 && Subject == "art") {
+        marks = 55;
+        if (marks >= 60 && Subject == "art") {
 
             System.out.println("TRUE:student is science baground");
         } else {
@@ -69,9 +69,9 @@ public class Fristoperater {
             System.out.println("FALSE:Person is not ellegebal for voting");
         }
         // FALSE && TRUE = FALSE
-        age = 18;
+        age = 17;
         State = "uttar pradesh";
-        if (State == "uutar pradesh" && age < 18) {
+        if (State == "uutar pradesh" && age >= 18) {
 
             System.out.println("TRUE: Person ellegibal for voting in uttar pradesh");
 
@@ -79,9 +79,9 @@ public class Fristoperater {
             System.out.println("FALSE:Person is not ellegebal for voting");
         }
         //FALSE && FALSE = FALSE
-        age = 18;
+        age = 17;
         State = "uttar pradesh";
-        if (State == "maharastra" && age < 18) {
+        if (State == "maharastra" && age >= 18) {
 
             System.out.println("TRUE: Person ellegibal for voting in uttar pradesh");
 
