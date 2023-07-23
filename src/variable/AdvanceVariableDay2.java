@@ -14,10 +14,10 @@ int d=8;
 int cd=c+d;
 System.out.println("Addition of c and d is"+cd);
 
-int e=1000;
-int f=999;
-int ef=e+f;
-System.out.println("Addition of e and f is"+ef);
+ c=1000;
+ d=999;
+ cd=c+d;
+System.out.println("Addition of c and d is"+cd);
 
 int a1=100;
 int b1=99;
