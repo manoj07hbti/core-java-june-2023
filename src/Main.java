@@ -51,7 +51,20 @@ public class Main {
         } else {
             System.out.println("print person not bellong to india");
         }
+
+        for (int i=1; i<=5; i++){
+
+        }
+        for (int j=1; j<=1; j++){
+
+            System.out.print("*");
+        }
+
+
+        System.out.println();
     }
+
+
 }
 
 
