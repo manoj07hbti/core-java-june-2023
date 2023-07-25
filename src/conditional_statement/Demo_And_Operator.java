@@ -96,7 +96,13 @@ public class Demo_And_Operator {
        }
 
 
-
+       double price = 66.7;
+        String product ="Pen";
+       if (price>= 67.8 && product == "pen"){
+           System.out.println("Pen price is normal price.");
+       }else {
+           System.out.println("Pen price is not normal price.");
+       }
 
 
 

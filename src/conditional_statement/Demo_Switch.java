@@ -46,6 +46,38 @@ public class Demo_Switch {
                 System.out.println("print is invalid month");
 
         }
+        int table = 7;
+        switch (table){
+            case 1:
+                System.out.println(5);
+                break;
+            case 2:
+                System.out.println(10);
+                break;
+            case 3:
+                System.out.println(15);
+            case 4:
+                System.out.println(20);
+                break;
+            case 5:
+                System.out.println(25);
+                break;
+            case 6:
+                System.out.println(30);
+                break;
+            case 7:
+                System.out.println(35);
+                break;
+            case 8:
+                System.out.println(40);
+                break;
+            case 9:
+                System.out.println(45);
+                break;
+            case 10:
+                System.out.println(50);
+
+        }
 
     }
 }
