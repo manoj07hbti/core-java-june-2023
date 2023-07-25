@@ -49,6 +49,15 @@ int apple=100;
 int result=mango/apple;
 System.out.println("Result is "+result);
 
+int q=78;
+int w=87;
+int qw=q+w;
+        System.out.println("addition of q and w.."+qw);
+
+
+
+
+
 
 
     }
