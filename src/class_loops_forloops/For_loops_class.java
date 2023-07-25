@@ -6,28 +6,29 @@ public class For_loops_class {
 
 
         int number = 5;
-        for (int i=1; i<=10; i++){
+        for (int i = 1; i <= 10; i++) {
 
-            System.out.println(number+"X" +i+ "=" +number*i);
+            System.out.println(number + "X" + i + "=" + number * i);
         }
         number = 10;
-        for (int i=1; i<=10; i++){
+        for (int i = 1; i <= 10; i++) {
 
-            System.out.println(number+"X" +i+ "=" +number*i);
+            System.out.println(number + "X" + i + "=" + number * i);
         }
-number=4;
+        number = 4;
 
-        for (int i=1; i<=10; i++){
+        for (int i = 1; i <= 10; i++) {
 
-            System.out.println(number +"X"+i+"="+ number*i);
+            System.out.println(number + "X" + i + "=" + number * i);
         }
+        number = 1;
 
+        for (int i = 0; i<=99; i++) {
+
+            System.out.println(number+i);
+        }
 
 
     }
-
-
 }
-
-
 
