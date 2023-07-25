@@ -13,14 +13,14 @@ public class Voting_ellegibilty {
             } else {
                 System.out.println("print person not ellegebal for voting");
             }
-            String cityname = "varanshi";
+            String cityname = "pune";
 
 
-            if (cityname == "varanshi") {
+            if (cityname == "pune") {
 
-                System.out.println("print person belong to varanshi");
+                System.out.println("print person belong to pune");
             } else {
-                System.out.println("person is not bellong to varanshi");
+                System.out.println("person is not bellong to pune");
             }
         }else {
             System.out.println("print vailid number");
