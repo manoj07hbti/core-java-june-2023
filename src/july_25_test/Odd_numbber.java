@@ -8,5 +8,6 @@ public class Odd_numbber {
                 System.out.println("printing the value of odd number : " + i);
             }
         }
+
     }
 }
