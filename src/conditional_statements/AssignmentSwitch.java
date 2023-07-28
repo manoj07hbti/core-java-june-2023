@@ -45,11 +45,7 @@ public class AssignmentSwitch {
 
                 default:
                     System.out.println("Please enter correct Month ..");
-
-
-
             }
-
 
         }
     }
