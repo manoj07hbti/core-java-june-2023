@@ -12,5 +12,8 @@ public class MyDoWhileLoop_Odd {
             num2++;
         } while (num2 <= 100);
 
+
+
+
     }
 }
