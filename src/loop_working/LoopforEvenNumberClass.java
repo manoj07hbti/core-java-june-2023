@@ -6,7 +6,7 @@ public class LoopforEvenNumberClass {
 
    int number = 1;
         for(int i=0; i<=100; i++){
-            if (i%2 == 0) {
+            if (i%2==0) {
                 System.out.println( "This are even number" +i);
             }
 
