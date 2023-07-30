@@ -32,10 +32,17 @@ public class ArrayDemo {
             System.out.println("Printing Student Name is : "   +var);
 
         }
-        double grad[]={45.87,76.98,67.90,76.9,98.1,98.6,87.78};
+        double grad[]={56.87,89.98,98.5,80.87,78,98};
         for(double var:grad) {
 
             System.out.println("Printing grad is : "  +var);
+        }
+        int marksStudent[]={45,65,67,78,76,78,66,62,69,90};
+        int marks=0;
+        // Using while loop
+        while (marks<marksStudent.length){
+            System.out.println("Printing Marks student using while  loop  : "   + marksStudent[marks]);
+            marks++;
         }
 
 
