@@ -20,17 +20,9 @@ public class Demo_While_Loop {
             multiply2++;
         }
 
-        int number1 =2;
-
-        while ((number <= 100)){
-            System.out.println(number1);
-            number +=2;
-        }
-         if (number1%2==0){
-
          }
 
     }
 
-}
+
 
