@@ -23,12 +23,14 @@ public class For_loops_class {
         }
         number = 1;
 
-        for (int i = 0; i<=99; i++) {
+        for (int i = 0; i <= 99; i++) {
 
-            System.out.println(number+i);
+            System.out.println(number + i);
         }
 
+ 
 
+        }
     }
-}
+
 

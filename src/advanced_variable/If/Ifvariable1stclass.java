@@ -4,9 +4,9 @@ public class Ifvariable1stclass {
 
     public static void main(String[] args) {
 
-        int age = 17;
+        int age = 19;
 
-        if (age < 18) ;
+        if (age >= 18) ;
         {
 
             System.out.println("person ellegible for voting");
@@ -22,7 +22,7 @@ public class Ifvariable1stclass {
 
         }
 
-        if (age > 18) ;
+        if (age<18) ;
         {
 
             System.out.println("person no elligebal for voting");

@@ -4,9 +4,9 @@ public class If_Eals2ndclass {
 
     public static void main(String[] args) {
 
-        int marks = 60; // frist devision
+        int marks = 40; // frist devision
 
-        if (marks <= 60) {
+        if (marks>= 60) {
 
             System.out.println("prnting frist devesion grater then 60");
         }
@@ -17,9 +17,9 @@ public class If_Eals2ndclass {
 
             System.out.println("not clear exam");
         }
-        String city = "varanshi";
+        String city = "pune";
 
-        if (city == "varanshi") {
+        if (city == "varanashi") {
 
             System.out.println("im belong to up");
         } else {

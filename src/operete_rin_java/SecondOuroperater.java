@@ -9,9 +9,9 @@ public class SecondOuroperater {
         String bookName = "englis";
         if (Price >= 100 || bookName == "englis") {
 
-            System.out.println("TRUE: book price is higher ");
+            System.out.println("True: book price is higher ");
         } else {
-            System.out.println("FALSE: Price is less");
+            System.out.println("True this is english book+ bookName");
         }
 
         // TRUE || FALSE= TRUE,
@@ -19,9 +19,9 @@ public class SecondOuroperater {
         bookName = "biology";
         if (Price >= 100 || bookName == "englis") {
 
-            System.out.println("TRUE: book price is higher ");
+            System.out.println("True: book price is higher ");
         } else {
-            System.out.println("FALSE: Price is less");
+            System.out.println("False this in not english book"+bookName);
         }
 
         //FALSE || TRUE = TRUE,
@@ -30,61 +30,61 @@ public class SecondOuroperater {
         bookName = "englis";
         if (Price >= 100 || bookName == "englis") {
 
-            System.out.println("TRUE: book price is higher ");
+            System.out.println("false: book price is low ");
         } else {
-            System.out.println("FALSE: Price is less");
+            System.out.println("true: this is english book"+bookName);
         }
         // FALSE || FALSE =FALSE
-        Price = 90;
-        bookName = "biology";
+        Price = 110;
+        bookName = "math";
         if (Price >= 100 || bookName == "englis") {
 
-            System.out.println("TRUE: book price is higher ");
+            System.out.println("True: book price is higher ");
         } else {
-            System.out.println("FALSE: Price is less");
+            System.out.println("False: this is not english book"+bookName);
         }
         String fruit = "orange";
         int price = 120;
-        if (price >= 100 || fruit == "orange") {
-            System.out.println("FRUTE: price is high");
+        if (price >= 100 || fruit == "orrange") {
+            System.out.println("false: price is high");
         } else {
-            System.out.println("FALSE: price is normal");
+            System.out.println("true: this is orrange");
         }
         // TRUE || FALSE = TRUE
 
         fruit = "orange";
         price = 96;
         if (price >= 100 || fruit == "orange") {
-            System.out.println("FRUTE: price is high");
+            System.out.println("true: this is orrange");
         } else {
-            System.out.println("FALSE: price is normal");
+            System.out.println("false: price is low");
         }
         // FALSE || TRUE = TRUE
 
         fruit = "mango";
         price = 120;
         if (price >= 100 || fruit == "orange") {
-            System.out.println("FRUTE: price is high");
+            System.out.println("False: this is orrange");
         } else {
-            System.out.println("FALSE: price is normal");
+            System.out.println("True: price is high");
         }
 // FALSE || FALSE = FALSE
         fruit = "mango";
         price = 90;
         if (price >= 100 || fruit == "orange") {
-            System.out.println("FRUTE: price is high");
+            System.out.println("False: this is not orrange");
         } else {
-            System.out.println("FALSE: price is normal");
+            System.out.println("False: price is low");
         }
         // && OPERATER TRUE && TRUE = TRUE
         int amount = 110;
         String name = "pen";
 
         if (amount > 100 && name == "pen") {
-            System.out.println("TRUE: price is high ");
+            System.out.println("True: price is high ");
 
         } else {
-            System.out.println("TRUE: price is good");
+            System.out.println("True: this is pen");
         }
 
         // TRUE && FALSE = FALSE
@@ -92,30 +92,30 @@ public class SecondOuroperater {
         name = "balpen";
 
         if (amount > 100 && name == "pen") {
-            System.out.println("TRUE: price is high ");
+            System.out.println("True: price is high ");
 
         } else {
-            System.out.println("FALSE: price is good");
+            System.out.println("False: this is not pen");
         }
         // FALSE && TRUE = FALSE
         amount = 95;
         name = "pen";
 
         if (amount > 100 && name == "pen") {
-            System.out.println("TRUE: price is high ");
+            System.out.println("False: price is low ");
 
         } else {
-            System.out.println("FALSE: price is good");
+            System.out.println("True: this is pen");
         }
 // FALSE && FALSE = FALSE
         amount = 95;
         name = "balpen";
 
         if (amount > 100 && name == "pen") {
-            System.out.println("TRUE: price is high ");
+            System.out.println("False: price is low");
 
         } else {
-            System.out.println("FALSE: price is good");
+            System.out.println("this is not pen");
         }
     }
 }
