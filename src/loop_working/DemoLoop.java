@@ -28,6 +28,10 @@ public class DemoLoop {
             System.out.println("Decrement for loop: "+i);
         }
 
+        for(int i=2; i>-3; i--){
+
+            System.out.println(i);
+        }
 
     }
 }
