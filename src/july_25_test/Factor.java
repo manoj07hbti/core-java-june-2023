@@ -8,5 +8,11 @@ public class Factor {
                 System.out.println(" printing the factor of 6 is : " +i);
             }
         }
+        number=4;
+        for(int i=1; i<=4; i++){
+            if(4%i==0){
+                System.out.println("printing the factor of 4 : " +i);
+            }
+        }
     }
 }

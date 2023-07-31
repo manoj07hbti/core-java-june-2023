@@ -48,5 +48,18 @@ public class Practic {
         i=8;
         cube=i*i*i;
         System.out.println("the cube value of " + i + " is : " + cube );
+
+
+
+        int number5=10;
+        cube=number5*number5*number5;
+        System.out.println("printing the cube value of 10 is : " + cube);
+
+        double number6=10000000;
+        double percentage=10000000*2/100;
+        System.out.println("printing the percentage " + percentage);
+
+
+
     }
 }
