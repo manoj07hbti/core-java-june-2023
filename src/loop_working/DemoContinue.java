@@ -6,7 +6,7 @@ public class DemoContinue {
 
         for(int i=1; i<=10; i++){
 
-            if(i==3){
+            if(i==3 || i==10){
                 continue;
             }
             System.out.println("Demo Continue of loop:"+i);
