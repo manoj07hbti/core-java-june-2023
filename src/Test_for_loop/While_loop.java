@@ -17,6 +17,7 @@ public class While_loop {
         while (j < size) {
             System.out.print(doublemarks[j] + " ");
             j++;
+
         }
 
         }
