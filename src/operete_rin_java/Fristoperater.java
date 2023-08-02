@@ -88,5 +88,6 @@ marks = 55;
         } else {
             System.out.println("FALSE:Person is not ellegebal for voting");
         }
+
     }
 }

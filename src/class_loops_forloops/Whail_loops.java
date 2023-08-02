@@ -30,6 +30,27 @@ int h=0;
 
             System.out.println(h*4);
             h++;
+        }for (i=0; i<=5; i++){
+
+            System.out.println("uday"+i);
+        }
+int u=0;
+
+        while (j<=6){
+
+            System.out.println("ramu"+j);
+
+            j++;
+        }
+
+int t=0;
+        do {
+
+            System.out.println("Ramesh:" + t);
+
+            t++;
+        }
+            while (t < 5) ;
         }
     }
-}
+

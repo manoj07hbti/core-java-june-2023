@@ -17,7 +17,7 @@ public class SecondOuroperater {
         // TRUE || FALSE= TRUE,
         Price = 100;
         bookName = "biology";
-        if (Price >= 100 || bookName == "englis") {
+        if (Price > 100 || bookName == "englis") {
 
             System.out.println("True: book price is higher ");
         } else {
@@ -28,7 +28,7 @@ public class SecondOuroperater {
 
         Price = 90;
         bookName = "englis";
-        if (Price >= 100 || bookName == "englis") {
+        if (Price > 100 || bookName == "englis") {
 
             System.out.println("false: book price is low ");
         } else {

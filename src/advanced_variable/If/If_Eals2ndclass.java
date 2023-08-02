@@ -17,11 +17,12 @@ public class If_Eals2ndclass {
 
             System.out.println("not clear exam");
         }
-        String city = "pune";
+        String city = "varanashi";
 
         if (city == "varanashi") {
 
             System.out.println("im belong to up");
+
         } else {
             System.out.println("im not belong to up");
         }

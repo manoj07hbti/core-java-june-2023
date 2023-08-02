@@ -7,7 +7,7 @@ public class Nested_loops {
 
         for (i=0; i<=5; i++){
 
-            System.out.println("MUMBAI");
+            System.out.print("MUMBAI");
 int j= 0;
             for (j=0; j<=5; j++){
 
@@ -15,5 +15,7 @@ int j= 0;
             }
         }
         System.out.println(" ");
+
+
     }
 }

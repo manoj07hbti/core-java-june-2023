@@ -29,14 +29,22 @@ public class IfAndEalsclass {
             System.out.println("print price is avarage");
         }
 
+        int Price = 100;
+        if (Price < 100) {
 
-    }
+            System.out.println("pen price is low");
 
+        }else {
 
+            System.out.println("price is normal");
+        }
+
+        int rice=90;
+if (Price>100){
+
+    System.out.println("pen price is high");
+}else {
+    System.out.println("pen price is low");
 }
-
-
-
-
-
-
+    }
+}
