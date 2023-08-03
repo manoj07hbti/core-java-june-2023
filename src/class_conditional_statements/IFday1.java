@@ -2,7 +2,7 @@ package class_conditional_statements;
 
 public class IFday1 {
     public static void main(String[] args) {
-        //SYNTEX : if(condition){ code to be executed } else {}
+        //SYNTAX : if(condition){ code to be executed } else {}
 
         int age = 17;
 

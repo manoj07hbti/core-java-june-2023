@@ -12,6 +12,9 @@ public class IFandELSE4 {
         } else {
             System.out.println("Not Cleared Exam");
         }
+
+
+
         //SYNTAX : if(condition){ code to be executed } else {}
         int marks1 = 34;
         if (marks1 >= 33) {

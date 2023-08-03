@@ -3,7 +3,6 @@ package class_conditional_statements;
 import java.sql.SQLOutput;
 
 public class NestedIf {
-
     public static void main(String[] args) {
 
         int num = 30;
@@ -17,13 +16,9 @@ public class NestedIf {
 
                 System.out.println("Number is Odd: " + num);
             }
-
-
         }else{
-
             System.out.println("Please Enter Valid Number");
         }
-
 
 
 

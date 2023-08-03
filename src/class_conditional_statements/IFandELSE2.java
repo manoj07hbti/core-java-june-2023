@@ -3,6 +3,7 @@ package class_conditional_statements;
 public class IFandELSE2 {
 
     public static void main(String[] args) {
+        //SYNTAX : if(condition){ code to be executed } else {}
         int age=19;
         if(age>18){
 
