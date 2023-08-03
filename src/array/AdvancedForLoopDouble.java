@@ -8,7 +8,10 @@ public class AdvancedForLoopDouble {
 
         System.out.println("double");
         for (double var : arr){
-            System.out.println(var);
+            System.out.print(var+" ");
         }
+
+
+
     }
 }
