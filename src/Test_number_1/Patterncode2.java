@@ -19,6 +19,8 @@ public class Patterncode2 {
                 System.out.print("*");
             }
             System.out.println();
+
+
         }
     }
 }
