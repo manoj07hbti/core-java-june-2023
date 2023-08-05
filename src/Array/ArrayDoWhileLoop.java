@@ -18,6 +18,7 @@ public class ArrayDoWhileLoop {
         System.out.println("Printing data at index using do while loop : " + i + ":" + names[i]);
         i++;
     } while (i<=4);
+//Advance loop
         for(String var : names){
 
             System.out.println("Printing array using advanced loop : "+var);

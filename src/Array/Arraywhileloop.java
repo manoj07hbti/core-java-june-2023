@@ -39,6 +39,7 @@ public class Arraywhileloop {
             System.out.println("Printing data at index using while loop : " + i + ":" + names[i]);
             i++;
         }
+        // Advance loop
 // String var :names
         for(String var : names){
 
