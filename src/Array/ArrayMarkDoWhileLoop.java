@@ -9,5 +9,11 @@ public class ArrayMarkDoWhileLoop {
             System.out.println("Printing marks array using while :"+marks[name]);
             name++;
         }while(name<=marks.length);
+// Advance loop
+        for(int  var : marks){
+            System.out.println("Printing marks array :"+var);
+        }
+
+
     }
 }
