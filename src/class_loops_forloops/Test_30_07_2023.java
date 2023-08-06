@@ -35,14 +35,14 @@ public class Test_30_07_2023 {
                 System.out.println();
             }
         }
-            for (int m=1; m<=3; m++) {
+        for (int m =1; m <=3; m++) {
 
-                for (int n=1; n<=m; n++) {
+            for (int n =3; n<0; n++) {
 
-                    System.out.print("*");
-                }
-                System.out.println();
+                System.out.print("*");
             }
+            System.out.println();
+        }
 
         }
 
