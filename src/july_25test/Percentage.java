@@ -1,4 +1,4 @@
-package july_test;
+package july_25test;
 
 public class Percentage {
 
