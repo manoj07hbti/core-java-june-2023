@@ -3,10 +3,7 @@ public class Assignment_Class_Doctor {
 
 
    // Doctor class and 5 Object
-   // Engineer class and 5 Object
-   // Laptop class 5 object
-   // Person class 5 object
-    //default constructor
+
     String name = "Anil Prasad Bhatt";
     String specialist = "Nephrologist";
     String location = "Pune";
