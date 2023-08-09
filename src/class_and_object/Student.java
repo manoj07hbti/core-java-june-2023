@@ -2,14 +2,47 @@ package class_and_object;
 
 public class Student {
 
-    String name="Rahul";
-    int rollNo=1;
-    String section="CS";
+    // DATA MEMBERS
+   public String name="Rahul";
+   private int rollNo=1;
+    String section="CS"; // it will come in default access specifier category
+
+    //CAPABILITIES
+   /* study
+    eat
+    play*/
+
+   /*TODO  Syntax : access_specifier return_type  method_name (parameter) { CODE..}
+        ..
+        access_specifier -> public , private , protected, default   THEORY PART
+        return_type   -> output of function or method :  void : no return type
+        method_name -> can be anything: it should be meaningful
+        parameter ->  input parameter : optional*/
+
+    public void studyMethod(){
+
+        System.out.println("This is study method ");
+    }
+
+    public void eatMethod(){
+
+        System.out.println("This is eat method");
+    }
+
+    public void playMethod(){
+        System.out.println("This is Play Method");
+    }
 
     public static void main(String[] args) {
 
-        Student student1= new Student();
+        Student obj= new Student(); // STEP 1 OBJECT CREATED
 
-        System.out.println("Printing Student name:"+student1.name+" Roll No:"+student1.rollNo+" Section:"+student1.section);
+        obj.eatMethod(); // STEP 2 ObjectName.MethodName();
+
+        obj.playMethod();
+
+        obj.studyMethod();
+
+
     }
 }

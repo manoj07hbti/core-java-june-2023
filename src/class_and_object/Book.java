@@ -7,20 +7,28 @@ public class Book {
     int pages=400;
     String writerName="James Gosling";
 
+    //CAPABILITIES
+    /*read
+    write*/
+
+
+    public void readMethod(){
+
+        System.out.println("This is read method of book class");
+    }
+
+    public void writeMethod(){
+
+        System.out.println("This is write method.....");
+    }
 
     public static void main(String[] args) {
         //ClassName objName= new ClassName();   DEFAULT CONSTRUCTOR
 
-        Book book1= new Book();
+       Book obj= new Book();
 
-        //object.propertyName;
-        System.out.println("Printing Book name: "+book1.name);
-        System.out.println("Printing Book Pages: "+book1.pages);
-        System.out.println("Printing Book Write name: "+book1.writerName);
-
-        Book book2= new Book();
-
-        System.out.println("Printing Book name: "+book1.name +" Printing pages: "+book2.pages+" Writer Name:"+book2.writerName);
+       obj.readMethod();
+       obj.writeMethod();
 
     }
 }
