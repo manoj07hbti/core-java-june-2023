@@ -13,8 +13,11 @@ public class Book1 {
 
     public static void main(String[] args) {
         //ClassName objName=new ClassName(); DEFAULT CONSTRUCTOR
-
+        System.out.println();
+        System.out.println("Printing Book1========> ");
+        System.out.println();
         Book1 Book = new Book1();
+
 
         //object.propertyName;
         System.out.println("Printing Book1 Name:" + Book.name);
