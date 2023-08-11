@@ -2,11 +2,11 @@ package class_and_object;
 
 public class Doctor {
 
-    String DocName = "Vandana";
-    String DocDept = "Neurology";
-    String DocID = "__twe-6433";
-    int DocAge = 24;
-    int DocSal = 50000;
+    public String DocName = "Vandana";
+    public String DocDept = "Neurology";
+    public String DocID = "__twe-6433";
+    public int DocAge = 24;
+    public int DocSal = 50000;
 
     public static void main(String[] args) {
         //ClassName objName=new ClassName() DEFAULT CONSTRUCTOR
