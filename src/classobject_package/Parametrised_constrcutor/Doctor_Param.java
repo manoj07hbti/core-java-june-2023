@@ -1,13 +1,13 @@
 package classobject_package.Parametrised_constrcutor;
 
-public class Doctor {
+public class Doctor_Param {
     String DoctorName;
     String Specialist;
     String address;
     int doctorAge;
     int fee;
 
-    public Doctor(String doctorName, String specialist, String address, int doctorAge, int fee) {
+    public Doctor_Param(String doctorName, String specialist, String address, int doctorAge, int fee) {
         DoctorName = doctorName;
         Specialist = specialist;
         this.address = address;
@@ -56,21 +56,21 @@ public class Doctor {
     }
 
     public static void main(String[] args) {
-        Doctor obj = new Doctor("Dr.veena jain", "gynecologist;", "fzd", 65, 500);
+        Doctor_Param obj = new Doctor_Param("Dr.veena jain", "gynecologist;", "fzd", 65, 500);
         System.out.println("Name of Doctor : " + obj.DoctorName);
         System.out.println("Specialist of Doctor : " + obj.Specialist);
         System.out.println("add of Doctor : " + obj.address);
         System.out.println("age of Doctor : " + obj.doctorAge);
         System.out.println("fee of Doctor : " + obj.fee);
 
-        Doctor obj1 = new Doctor("Dr.Dharam", "eyes specialist", "fzd", 60, 300);
+        Doctor_Param obj1 = new Doctor_Param("Dr.Dharam", "eyes specialist", "fzd", 60, 300);
         System.out.println("Name of Doctor : " + obj1.DoctorName);
         System.out.println("Specialist of Doctor : " + obj1.Specialist);
         System.out.println("add of Doctor : " + obj1.address);
         System.out.println("Age of Doctor : " + obj1.doctorAge);
         System.out.println("fee of Doctor : " + obj1.fee);
 
-        Doctor obj2 = new Doctor("Dr.Ganesh", "All Rounder", "fzd", 54, 400);
+        Doctor_Param obj2 = new Doctor_Param("Dr.Ganesh", "All Rounder", "fzd", 54, 400);
         System.out.println("Name of Doctor : " + obj2.DoctorName);
         System.out.println("Specialist of Doctor : " + obj2.Specialist);
         System.out.println("add of Doctor : " + obj2.address);

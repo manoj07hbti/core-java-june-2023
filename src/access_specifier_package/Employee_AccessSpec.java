@@ -1,4 +1,4 @@
-package classobject_package;
+package access_specifier_package;
 
 public class Employee_AccessSpec {
 
