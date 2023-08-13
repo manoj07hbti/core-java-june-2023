@@ -28,6 +28,7 @@ public class Factorial_Method {
         Factorial_Method obj = new Factorial_Method();
         obj.factorial_Method();
         obj.factorial_method();
+
     }
 }
 

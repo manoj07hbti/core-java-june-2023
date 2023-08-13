@@ -54,5 +54,4 @@ public class Calculator_Method {
         obj.percentage();
     }
 
-
 }

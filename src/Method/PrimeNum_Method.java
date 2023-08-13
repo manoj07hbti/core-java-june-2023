@@ -32,5 +32,4 @@ public class PrimeNum_Method {
 
         }
     }
-
 }

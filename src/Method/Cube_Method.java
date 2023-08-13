@@ -30,7 +30,6 @@ public void cube3(){
     obj.cube3();
 
 
-
     }
 }
 
