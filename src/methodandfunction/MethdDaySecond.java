@@ -62,7 +62,7 @@ public class MethdDaySecond {
         System.out.println("subtraction is:"+(a-b));
         System.out.println("multiplication is:"+(a*b));
         // System.out.println("division is:"+(double)(a/b));
-        System.out.println(+result);
+        System.out.println("Division is"+result);
 
     }
         public static void main(String[] args) {
