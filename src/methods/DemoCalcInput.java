@@ -2,12 +2,11 @@ package methods;
 
 public class DemoCalcInput {
 
-    public void add(int a, int b ){
+    public int add(int a, int b ){
 
         int result=a+b;
 
-        System.out.println("Addition is: "+result);
-
+       return result;
     }
 
     public void divide(int a, int b){
@@ -21,7 +20,8 @@ public class DemoCalcInput {
 
     public static void main(String[] args) {
         DemoCalcInput obj= new DemoCalcInput();
-        obj.add(2,3);
+       int result= obj.add(2,3);
+        System.out.println("Addition is: "+result);
         obj.add(34,12);
 
         obj.divide(4,2);
