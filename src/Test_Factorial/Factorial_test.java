@@ -8,7 +8,7 @@ public class Factorial_test {
     public void factorial() {
 
         int i, fac = 1;
-        int number = 8;
+        int number = 10;
 
         for (i = 1; i <= number; i++) {
             fac = fac * i;
