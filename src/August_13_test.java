@@ -5,15 +5,12 @@ public class August_13_test {
         public static void main(String[] args) {
 
             int number =160;
-            for (int i=9; i<=160; i++ ){
+            for (int i=3; i<=160; i++ ){
 
                 if (i%9==0 && i%2==0){
 
-                    System.out.println("given number are "+i);
+                    System.out.println("given number are "+i) ;
                 }
             }
-
-
-
-      }
+        }
 }

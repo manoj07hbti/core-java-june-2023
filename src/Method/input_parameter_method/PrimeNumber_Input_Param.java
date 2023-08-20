@@ -1,4 +1,4 @@
-package input_parameter_method;
+package Method.input_parameter_method;
 
 public class PrimeNumber_Input_Param {
 
