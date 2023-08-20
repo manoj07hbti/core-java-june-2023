@@ -9,7 +9,7 @@ public class CalculatorMethod {
         int A = 78;
         int B = 22;
         int result = A + B;
-        System.out.println("Addition of A and B is :" + result);
+        System.out.println("Addition of " + A + " + " + B + " is :" + result);
     }
 
     public void subtractionMethod() {

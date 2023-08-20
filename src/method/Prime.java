@@ -5,12 +5,12 @@ public class Prime {
     public void findPrime() {
 
 
-        int number = 4;
+        int number = 31;
         boolean isPrime = true;
         for (int i = 2; i < number; i++) {
             if (number % i == 0) {
                 isPrime = false;
-                break;
+               // break;
             }
         }
 

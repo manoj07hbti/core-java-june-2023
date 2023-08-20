@@ -6,7 +6,7 @@ public class CubeMethod {
 
    public void findCube(){
        int number=3;
-       System.out.println("Square of "+number+" is "+number*number*number);
+       System.out.println("cube of "+number+" is "+number*number*number);
    }
 
     public static void main(String[] args) {
