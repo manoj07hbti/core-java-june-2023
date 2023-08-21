@@ -2,6 +2,8 @@ package methods;
 
 import demo.Demo;
 
+import java.util.Scanner;
+
 public class DemoATM {
 
     public boolean checkPassword(String carNumber, String password) {
@@ -18,7 +20,14 @@ public class DemoATM {
 
         DemoATM obj= new DemoATM();
 
-        boolean result=   obj.checkPassword("1234","3333");
+        Scanner scanner= new Scanner(System.in);
+
+        System.out.println("Please enter card number");
+        String card= scanner.nextLine();
+        System.out.println("Please enter password: ");
+        String pwd=scanner.nextLine();
+
+        boolean result=   obj.checkPassword(card,pwd);
         System.out.println(result);
 
         if(result){

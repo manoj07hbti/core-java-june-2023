@@ -13,6 +13,8 @@ public class DemoInputParameter {
             System.out.println("Number is odd Number "+number);
         }
 
+        DemoInputParameter obj= new DemoInputParameter();
+        obj.checkVoteEligibility("Pune",19);
     }
 
     public void checkVoteEligibility(String city, int age){
