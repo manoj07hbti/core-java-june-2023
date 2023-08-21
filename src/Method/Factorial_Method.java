@@ -30,5 +30,7 @@ public class Factorial_Method {
         obj.factorial_method();
 
     }
+
 }
+
 

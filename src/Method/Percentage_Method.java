@@ -7,8 +7,6 @@ public class Percentage_Method {
         double number = 600;
         double percentage = 600 * 6 / 100;
         System.out.println("Percentage of " + number + " is " + percentage + "%");
-
-
     }
 
     public static void main(String[] args) {

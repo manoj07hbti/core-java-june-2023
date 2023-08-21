@@ -1,4 +1,4 @@
-package input_parameter_method;
+package Method.input_parameter_method;
 
 public class Calculator_Input_Param {
     // addition,subtraction,multiply,division,percentage:
