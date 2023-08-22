@@ -63,7 +63,7 @@ else if (day==6) {
             default:
                 System.out.println("plese enter valid week name");
         }
-        int month=13;
+        int month=12;
         switch (month){
             case 1:
                 System.out.println("january");
@@ -105,7 +105,7 @@ else if (day==6) {
                 System.out.println("plese enter valid month");
         }
 
-    int year=24;
+    int year=23;
     switch (year){
 
 case 1:
