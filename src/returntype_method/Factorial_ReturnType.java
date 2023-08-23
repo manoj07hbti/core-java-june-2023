@@ -9,7 +9,6 @@ public class Factorial_ReturnType {
         }
         return fact;
     }
-
     public static void main(String[] args) {
         Factorial_ReturnType obj = new Factorial_ReturnType();
         int output = obj.factorial(4);
