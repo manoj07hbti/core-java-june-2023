@@ -19,10 +19,8 @@ public class Method_Class_Ass {
             System.out.println("Even number found:"+number);
         }else {
 
-            System.out.println("Odd number found:"+number);
+            System.out.println("Odd number found:" + number);
         }
-
-
     }
 
     public static void main(String[] args) {
