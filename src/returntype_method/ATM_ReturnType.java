@@ -4,9 +4,9 @@ import com.sun.xml.internal.ws.wsdl.writer.document.http.Address;
 
 public class ATM_ReturnType {
 
-    public boolean checkPassword(String cardNumber, String Password, String Address, String Amount) {
+    public boolean checkPassword(String cardNumber, String Password, String Address, int Amount){
 
-        if (cardNumber.equals("4321") && Password.equals("1232") && Address.equals("SBI") && Amount.equals("One Lakh"))
+        if (cardNumber.equals("4321") && Password.equals("1232") && Address.equals("SBI") && Amount==(2000000))
 
         {
 
@@ -19,7 +19,7 @@ public class ATM_ReturnType {
     public static void main(String[] args) {
 
         ATM_ReturnType obj = new ATM_ReturnType();
-        boolean result = obj.checkPassword("4521", "1232", "SBI", "twoLakh");
+        boolean result = obj.checkPassword("4321", "1232", "SBI", 2000000);
         System.out.println(result);
 
         if (result) {

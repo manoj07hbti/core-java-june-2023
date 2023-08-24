@@ -1,4 +1,4 @@
-package myWhileloop_package;
+package loop_package.myWhileloop_package;
 
 public class MyWhileLoop_ClassT_E_O {
     public static void main(String[] args) {

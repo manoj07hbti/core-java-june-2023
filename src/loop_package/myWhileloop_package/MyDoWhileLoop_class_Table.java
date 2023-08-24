@@ -1,4 +1,4 @@
-package myWhileloop_package;
+package loop_package.myWhileloop_package;
 
 public class MyDoWhileLoop_class_Table {
     public static void main(String[] args) {
