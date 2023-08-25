@@ -24,48 +24,66 @@ public class CacUsingScanner {
         return mul;
     }
 
-    public double division(double a,double b)
+    public double division(int a,int b)
     {
-        double div=a/b;
+        double div=(double) a/b;
         return div;
     }
 
+
+
+
+
     public static void main(String[] args) {
+        int number=0;
+        String choice="y";
+        int a=0;
+        int b=0;
         CacUsingScanner cus=new CacUsingScanner();
-
-
-        Scanner scanner=new Scanner(System.in);
-        System.out.println("Please entered value of a");
-        int a= scanner.nextInt();
-
-        System.out.println("please entered value of b");
-        int b= scanner.nextInt();
-
-        System.out.println("Please enter the your choice");
-        int number= scanner.nextInt();
-
-        switch (number)
+        while (choice.equals("y"))
         {
 
-            case 1:
-                int resut1= cus.addition(a,b);
-                System.out.println("Addition of number is\t"+resut1);
-                break;
+
+
+            Scanner scanner=new Scanner(System.in);
+            System.out.println("Please entered value of a");
+             a= scanner.nextInt();
+
+            System.out.println("please entered value of b");
+            b= scanner.nextInt();
+
+            System.out.println("Please enter the your choice");
+            number= scanner.nextInt();
+
+            switch (number)
+            {
+
+                case 1:
+                    int resut1= cus.addition(a,b);
+                    System.out.println("Addition of number is\t"+resut1);
+                    break;
                 //int add=a+b;
-            case 2:
-                int resut2= cus.substraction(a,b);
-                System.out.println("subtraction of number is\t " +resut2);
-                break;
-            case 3:
-                int resut3= cus.multiplication(a,b);
-                System.out.println("multiplication of number is\t " +resut3);
-                break;
-            case 4:
-                double resut4= cus.division(a,b);
-                System.out.println("division of number is\t " +resut4);
-                break;
-            default:
-                System.out.println("Please enter valid number");
+                case 2:
+                    int resut2= cus.substraction(a,b);
+                    System.out.println("subtraction of number is\t " +resut2);
+                    break;
+                case 3:
+                    int resut3= cus.multiplication(a,b);
+                    System.out.println("multiplication of number is\t " +resut3);
+                    break;
+                case 4:
+                    double resut4= cus.division(a,b);
+                    System.out.println("division of number is\t " +resut4);
+                    break;
+                default:
+                    System.out.println("Please enter valid number");
+            }
+          //
+            System.out.println("Enter y to continue or press any other key to exit");
+            Scanner sc=new Scanner(System.in);
+            choice=sc.nextLine();
         }
+
+
     }
 }
