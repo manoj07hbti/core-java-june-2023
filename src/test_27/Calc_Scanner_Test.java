@@ -54,10 +54,6 @@ public class Calc_Scanner_Test {
             System.out.println("press y to continue...any other key to exit");
             Scanner scanner1 = new Scanner(System.in);
             flag = scanner1.nextLine();
-
-
-
         }
-
     }
 }
