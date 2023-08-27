@@ -58,20 +58,20 @@ public class CacUsingScanner {
             switch (number)
             {
 
-                case 1:
+                case 10:
                     int resut1= cus.addition(a,b);
                     System.out.println("Addition of number is\t"+resut1);
                     break;
                 //int add=a+b;
-                case 2:
+                case 20:
                     int resut2= cus.substraction(a,b);
                     System.out.println("subtraction of number is\t " +resut2);
                     break;
-                case 3:
+                case 30:
                     int resut3= cus.multiplication(a,b);
                     System.out.println("multiplication of number is\t " +resut3);
                     break;
-                case 4:
+                case 40:
                     double resut4= cus.division(a,b);
                     System.out.println("division of number is\t " +resut4);
                     break;
