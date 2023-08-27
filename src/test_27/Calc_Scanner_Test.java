@@ -55,6 +55,8 @@ public class Calc_Scanner_Test {
             Scanner scanner1 = new Scanner(System.in);
             flag = scanner1.nextLine();
 
+
+
         }
     }
 }
