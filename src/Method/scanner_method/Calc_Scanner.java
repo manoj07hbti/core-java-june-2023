@@ -17,13 +17,12 @@ public class Calc_Scanner {
     }
 
     public int Division(int m, int n) {
+
         return m / n;
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Please Enter your Choice :");
         int choice = scanner.nextInt();
         System.out.println("Please Enter Value of m :");
         int m = scanner.nextInt();

@@ -1,4 +1,4 @@
-package practicep;
+package _1_practicep;
 
 public class Advance_Variable {
             public static void main(String[] args) {
