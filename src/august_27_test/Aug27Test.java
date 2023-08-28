@@ -5,24 +5,24 @@ import java.util.Scanner;
 public class Aug27Test {
 
 
-    public double addition(int a, int b) {
-        return (double) a + b;
+    public double addition(double a, double b) {
+        return  a + b;
     }
 
-    public double subtraction(int a, int b) {
-        return (double) a - b;
+    public double subtraction(double a, double b) {
+        return  a - b;
     }
 
-    public double multiplication(int a, int b) {
-        return (double) a * b;
+    public double multiplication(double a, double b) {
+        return  a * b;
     }
 
-    public double division(int a, int b) {
-        return (double) a / b;
+    public double division(double a, double b) {
+        return  a / b;
     }
 
-    public double percentage(int a, int b) {
-        return (double) a * b / 100;
+    public double percentage(double a, double b) {
+        return  a * b / 100;
     }
 
     public static void main(String[] args) {
@@ -30,17 +30,16 @@ public class Aug27Test {
         Aug27Test obj = new Aug27Test();
 
         while (Flag.equals("y")) {
-            int a, b;
+            double a, b;
             Scanner scanner = new Scanner(System.in);
             System.out.println("Please Enter Your Choice :\n3.Percentage\n5.Addition\n10.Subtraction\n15.Multiplication\n20.Division");
             int choice = scanner.nextInt();
 
-            System.out.println("Please Enter Valid Number :");
-            scanner.nextInt();
+
             System.out.println("Please Enter Value of a :");
-            a = scanner.nextInt();
+            a = scanner.nextDouble();
             System.out.println("Please Enter Value of b :");
-            b = scanner.nextInt();
+            b = scanner.nextDouble();
 
 
             if (choice == 3) {
