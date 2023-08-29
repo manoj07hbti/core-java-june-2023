@@ -1,8 +1,6 @@
 package conditional;
 
-import java.time.Month;
-
-public class Demo_Switch {
+public class Demo_Switch_Month {
     public static void main(String[] args) {
        int Month=12;
         switch (Month){
