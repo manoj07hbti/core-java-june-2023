@@ -1,4 +1,4 @@
-package test;
+package test_27august;
 
 import java.util.Scanner;
 
