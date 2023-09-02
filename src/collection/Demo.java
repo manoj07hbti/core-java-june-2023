@@ -31,6 +31,7 @@ public class Demo {
         System.out.println("Courses :" + collegeInfo.get(2));
         System.out.println("College Name :" + collegeInfo.get(0));
 
+        System.out.println("******BEFORE DELETE SIZE OF COLLECTION IS ******"+collegeInfo.size());
         //how to print all data of collection
 
         for(int i=0;  i<collegeInfo.size(); i++){
@@ -41,6 +42,8 @@ public class Demo {
         //delete data : objName.remove(INDEX);
 
         collegeInfo.remove(2);
+
+        System.out.println("******AFTER DELETE SIZE OF COLLECTION IS ******"+collegeInfo.size());
         for(int i=0;  i<collegeInfo.size(); i++){
 
             System.out.println(" After delete : Printing all data of list : "+collegeInfo.get(i) +" INDEX:"+i);
