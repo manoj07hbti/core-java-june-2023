@@ -1,4 +1,4 @@
-package test_27_aug_method;
+package test_no_4;
 
 import java.util.Scanner;
 
