@@ -6,6 +6,8 @@ import java.util.Scanner;
 
 public class DemoATM {
 
+    public double perDayAmount;
+
     public boolean checkPassword(String carNumber, String password) {
 
         if (carNumber.equals("1234") && password.equals("3333")) {
@@ -14,6 +16,15 @@ public class DemoATM {
         }
 
         return false;
+    }
+
+    public boolean checkPerDayLimit(double perDayAmount){
+
+        if(perDayAmount>=25000){
+        return  true;
+        }
+        return false;
+
     }
 
     public static void main(String[] args) {
@@ -36,6 +47,11 @@ public class DemoATM {
             System.out.println("Sorry... incorrect details entered ");
         }
 
+
+        if(obj.checkPerDayLimit(5000)){
+
+            System.out.println("Enter amount:");
+        }
     }
 
 }
