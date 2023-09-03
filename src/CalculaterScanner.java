@@ -18,7 +18,7 @@ public class CalculaterScanner {
         return a * b;
     }
 
-    public double devidede(int a, int b) {
+    public double divided(int a, int b) {
         return (double) a / b;
     }
 
@@ -30,21 +30,21 @@ public class CalculaterScanner {
         String flag = "y";
         while (flag == "y" || flag.equals("y")) {
 
-            System.out.println("plese enter value of a: ");
+            System.out.println("please enter value of a: ");
             int a = scanner.nextInt();
-            System.out.println("plese nter value of b: ");
+            System.out.println("please enter value of b: ");
             int b = scanner.nextInt();
-            System.out.println("plese enter your choice:10 addition,20 substraction, 30 mltiply, 40 devidede");
+            System.out.println("please enter your choice:10 addition,20 subtraction, 30 multiply, 40 divided");
             int Choice = scanner.nextInt();
 
             if (Choice == 10) {
                 int result = obj.sum(a, b);
-                System.out.println("addtion of given number:" + result);
+                System.out.println("addition of given number:" + result);
 
             } else if (Choice == 20) {
 
                 int result = obj.subtraction(a, b);
-                System.out.println("substraction of given number:" + result);
+                System.out.println("subtraction of given number:" + result);
 
             } else if (Choice == 30) {
 
@@ -53,11 +53,11 @@ public class CalculaterScanner {
 
             } else if (Choice == 40) {
 
-                double result = obj.devidede(a, b);
+                double result = obj.divided(a, b);
 
-                System.out.println("devidede of given number:" + result);
+                System.out.println("divided of given number:" + result);
             }
-            System.out.println("plese press Y for contineue or .. any boton to exit");
+            System.out.println("please press Y for continue or .. any baton to exit");
             Scanner scanner1 = new Scanner(System.in);
 
             flag = scanner1.nextLine();
