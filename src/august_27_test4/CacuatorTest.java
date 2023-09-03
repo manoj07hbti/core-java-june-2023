@@ -61,21 +61,21 @@ public class CacuatorTest {
                 {
 
                     case 10:
-                        int resut1= ct.addition(a,b);
-                        System.out.println("Addition of number is\t"+resut1);
+                        int result1= ct.addition(a,b);
+                        System.out.println("Addition of number is\t"+result1);
                         break;
                     //int add=a+b;
                     case 20:
-                        int resut2= ct.substraction(a,b);
-                        System.out.println("subtraction of number is\t " +resut2);
+                        int result2= ct.substraction(a,b);
+                        System.out.println("subtraction of number is\t " +result2);
                         break;
                     case 30:
-                        int resut3= ct.multiplication(a,b);
-                        System.out.println("multiplication of number is\t " +resut3);
+                        int result3= ct.multiplication(a,b);
+                        System.out.println("multiplication of number is\t " +result3);
                         break;
                     case 40:
-                        double resut4= ct.division(a,b);
-                        System.out.println("division of number is\t " +resut4);
+                        double result4= ct.division(a,b);
+                        System.out.println("division of number is\t " +result4);
                         break;
                     default:
                         System.out.println("Please enter valid number");
