@@ -13,6 +13,7 @@ public class DemoGenerics {
         stringArrayList.add("Mukesh");//1
         //stringArrayList.add(33);  it will not allow any other datatype
         stringArrayList.add("Mohit");//2
+        stringArrayList.add("1.4 Billion,3 Million");
 
         return  stringArrayList;
     }
