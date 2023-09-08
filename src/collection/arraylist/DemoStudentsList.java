@@ -1,4 +1,4 @@
-package collection;
+package collection.arraylist;
 
 import collection.model.Student;
 
