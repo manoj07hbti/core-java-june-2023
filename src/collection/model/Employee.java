@@ -6,14 +6,12 @@ public class Employee {
 
     public int Age;
 
-    public String Department;
-
     public String CompName;
 
-    public Employee(String name, int age, String department, String compName) {
+
+    public Employee(String name, int age, String compName) {
         Name = name;
         Age = age;
-        Department = department;
         CompName = compName;
     }
 
@@ -33,14 +31,6 @@ public class Employee {
         Age = age;
     }
 
-    public String getDepartment() {
-        return Department;
-    }
-
-    public void setDepartment(String department) {
-        Department = department;
-    }
-
     public String getCompName() {
         return CompName;
     }
@@ -49,3 +39,4 @@ public class Employee {
         CompName = compName;
     }
 }
+

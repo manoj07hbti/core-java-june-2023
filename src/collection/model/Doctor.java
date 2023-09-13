@@ -2,62 +2,61 @@ package collection.model;
 
 public class Doctor {
 
-    public String name;
-
-    public int Age;
-
-    public String Specialist;
-
-    public int Fees;
-
-    public String Address;
+    public String DoctorName;
+    public int fees;
+    public String specialist;
 
 
-    public Doctor(String name, int age, String specialist, int fees, String address) {
-        this.name = name;
-        Age = age;
-        Specialist = specialist;
-        Fees = fees;
-        Address = address;
+    public Doctor(String doctorName, int fees, String specialist) {
+        DoctorName = doctorName;
+        this.fees = fees;
+        this.specialist = specialist;
     }
 
-    public String getName() {
-        return name;
+    public String getDoctorName() {
+        return DoctorName;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return Age;
-    }
-
-    public void setAge(int age) {
-        Age = age;
-    }
-
-    public String getSpecialist() {
-        return Specialist;
-    }
-
-    public void setSpecialist(String specialist) {
-        Specialist = specialist;
+    public void setDoctorName(String doctorName) {
+        DoctorName = doctorName;
     }
 
     public int getFees() {
-        return Fees;
+        return fees;
     }
 
     public void setFees(int fees) {
-        Fees = fees;
+        this.fees = fees;
     }
 
-    public String getAddress() {
-        return Address;
+    public String getSpecialist() {
+        return specialist;
     }
 
-    public void setAddress(String address) {
-        Address = address;
+    public void setSpecialist(String specialist) {
+        this.specialist = specialist;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
