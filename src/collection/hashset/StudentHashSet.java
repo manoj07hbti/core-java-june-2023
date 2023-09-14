@@ -1,24 +1,35 @@
 package collection.hashset;
 
-import collection.model.Student;
+import collection.model.Student1;
 
 import java.util.HashSet;
 
 public class StudentHashSet {
 
 
-    public HashSet<Student> createStudentSet() {
-        HashSet<Student> students = new HashSet<>();
-        Student student1 = new Student("Jatin", 21, "it");
-        Student student2 = new Student("Vandana", 19, "medic");
-        Student student3 = new Student("Ojal", 20, "webtoon");
-        Student student4 = new Student("Mohit", 18, "metric");
-        Student student5 = new Student("Mukul", 19, "inter");
-        Student student6 = new Student("Jatin", 21, "it");
-        Student student7 = new Student("Vandana", 19, "medic");
-        Student student8 = new Student("Ojal", 20, "webtoon");
-        Student student9 = new Student("Mohit", 18, "metric");
-        Student student10 = new Student("Mukul", 19, "inter");
+    public HashSet<Student1> createStudentSet() {
+        HashSet<Student1> students = new HashSet<>();
+
+        Student1 student1 = new Student1("Jatin", 21, "it",1);
+        System.out.println("Hashcode of Student 1 is:" + student1.hashCode());
+        Student1 student2 = new Student1("Vandana", 19, "medic",2);
+        System.out.println("Hashcode of Student 2 is:" + student2.hashCode());
+        Student1 student3 = new Student1("Ojal", 20, "webtoon",3);
+        System.out.println("Hashcode of Student 3 is:" + student3.hashCode());
+        Student1 student4 = new Student1("Mohit", 18, "metric",4);
+        System.out.println("Hashcode of Student 4 is:"+student4.hashCode());
+        Student1 student5 = new Student1("Mukul", 19, "inter",5);
+        System.out.println("Hashcode of Student 5 is:"+student5.hashCode());
+        Student1 student6 = new Student1("Jatin", 21, "it",1);
+        System.out.println("Hashcode of Student 6 is:"+student6.hashCode());
+        Student1 student7 = new Student1("Vandana", 19, "medic",2);
+        System.out.println("Hashcode of Student 7 is:"+student7.hashCode());
+        Student1 student8 = new Student1("Ojal", 20, "webtoon",3);
+        System.out.println("Hashcode of Student 8 is:"+student8.hashCode());
+        Student1 student9 = new Student1("Mohit", 18, "metric",4);
+        System.out.println("Hashcode of Student 9 is:"+student9.hashCode());
+        Student1 student10 = new Student1("Mukul", 19, "inter",5);
+        System.out.println("Hashcode of Student 10 is:"+student10.hashCode());
 
 
         students.add(student1);
@@ -37,11 +48,11 @@ public class StudentHashSet {
 
     public static void main(String[] args) {
         StudentHashSet obj = new StudentHashSet();
-        HashSet<Student> studentsData = obj.createStudentSet();
+        HashSet<Student1> studentsData = obj.createStudentSet();
 
         int i = 0;
-        for (Student var : studentsData) {
-            System.out.println("Name is: " + var.getName() + " Age is: " + var.getAge() + " Section is: " + var.getSection() + " at INDEX " + i);
+        for (Student1 var : studentsData) {
+            System.out.println("Roll_No is: "+var.getRoll_no() + " at INDEX " + i);
             i++;
         }
 

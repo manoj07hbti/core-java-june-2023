@@ -1,5 +1,7 @@
 package collection.model;
 
+import java.util.Objects;
+
 public class Employee {
 
     public String EmpName;
@@ -14,6 +16,19 @@ public class Employee {
         EmpId = empId;
         Dept = dept;
         Salary = salary;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Employee employee = (Employee) o;
+        return Age == employee.Age && EmpId == employee.EmpId && Salary == employee.Salary && Objects.equals(EmpName, employee.EmpName) && Objects.equals(Dept, employee.Dept);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(EmpName, Age, EmpId, Dept, Salary);
     }
 
     public String getEmpName() {
