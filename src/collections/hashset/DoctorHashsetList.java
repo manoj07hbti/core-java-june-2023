@@ -12,11 +12,22 @@ public class DoctorHashsetList {
         HashSet<Doctor> doctorHashSet = new HashSet<>();
 
         Doctor doctor1 = new Doctor("Dr.Bhatiya", "Hair", 38);
+        System.out.println("Hashcode of Doctor1 " + doctor1.hashCode());
+
         Doctor doctor2 = new Doctor("Dr Zakir ", "Skin", 35);
+        System.out.println("Hashcode of Doctor2 " + doctor2.hashCode());
+
         Doctor doctor3 = new Doctor("Dr.Manoj Jain", "Bone", 40);
+        System.out.println("Hashcode of Doctor3 " + doctor3.hashCode());
+
         Doctor doctor4 = new Doctor("Dr.Bhatiya", "Hair", 38);
+        System.out.println("Hashcode of Doctor4 " + doctor4.hashCode());
+
         Doctor doctor5 = new Doctor("Dr Zakir ", "Skin", 35);
+        System.out.println("Hashcode of Doctor5 " + doctor5.hashCode());
+
         Doctor doctor6 = new Doctor("Dr.Manoj Jain", "Bone", 40);
+        System.out.println("Hashcode of Doctor6 " + doctor6.hashCode());
 
         doctorHashSet.add(doctor1);
         doctorHashSet.add(doctor2);
