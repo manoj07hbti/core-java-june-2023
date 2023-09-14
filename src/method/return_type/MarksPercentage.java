@@ -1,6 +1,6 @@
 package method.return_type;
 
-public class Percentage {
+public class MarksPercentage {
 
     //TODO write a code to find a percentage
 
@@ -16,7 +16,7 @@ public class Percentage {
     }
 
     public static void main(String[] args) {
-        Percentage obj=new Percentage();
+        MarksPercentage obj=new MarksPercentage();
         System.out.println("Percentage of Given Numbers is :"+(obj.findPercentage(500)+"%"));
         double output=obj.findPercentages();
         System.out.println("Percentage of Given Numbers is :"+output+"%");

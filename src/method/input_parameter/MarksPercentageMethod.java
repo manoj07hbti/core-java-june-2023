@@ -1,6 +1,6 @@
 package method.input_parameter;
 
-public class PercentageMethod {
+public class MarksPercentageMethod {
     //TODO write a code to find percentage
 
     public void findPercentage(int marks) {
@@ -10,7 +10,7 @@ public class PercentageMethod {
     }
 
     public static void main(String[] args) {
-        PercentageMethod obj = new PercentageMethod();
+        MarksPercentageMethod obj = new MarksPercentageMethod();
         obj.findPercentage(460);
     }
 }
