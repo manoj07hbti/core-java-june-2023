@@ -1,7 +1,6 @@
-package collection;
+package collection.generic_arraylist;
 
 import collection.model.Employee;
-import collection.model.Student;
 
 import java.util.ArrayList;
 
