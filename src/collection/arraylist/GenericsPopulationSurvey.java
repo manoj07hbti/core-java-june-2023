@@ -1,6 +1,5 @@
-package collection;
+package collection.arraylist;
 
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class GenericsPopulationSurvey {
@@ -116,9 +115,11 @@ public class GenericsPopulationSurvey {
 
         System.out.println("");
         System.out.println("****Using Advanced for loop****");
-
+            int r=0;
         for (String var:countryName){
-            System.out.println("Printing Country Name : " + var);
+
+            System.out.println("Printing Country Name : " + var +" at INDEX " +r);
+            r++;
         }
 
         System.out.println(" ");
