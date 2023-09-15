@@ -1,5 +1,7 @@
 package collection.model;
 
+import java.util.Objects;
+
 public class Student {
 
     public String name;
@@ -16,6 +18,19 @@ public class Student {
         this.roll_no = roll_no;
         this.mark = mark;
         this.branch = branch;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return roll_no == student.roll_no && mark == student.mark && Objects.equals(name, student.name) && Objects.equals(branch, student.branch);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, roll_no, mark, branch);
     }
 
     public String getName() {
