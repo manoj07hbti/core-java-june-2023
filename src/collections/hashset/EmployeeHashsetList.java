@@ -16,15 +16,34 @@ public class EmployeeHashsetList {
    // NOW WE WILL ADD EMPLOYEE DATA....................
 
         Employee employee1 = new Employee("Jones","IT",65000);
+        System.out.println("Hashcode of Employee1 " + employee1.hashCode());
+
         Employee employee2 = new Employee("Wendy","CS",80000);
+        System.out.println("Hashcode of Employee2 " + employee2.hashCode());
+
         Employee employee3 = new Employee("Kartik","HR",85000);
+        System.out.println("Hashcode of Employee3 " + employee3.hashCode());
+
         Employee employee4 = new Employee("Kiran","CS",55000);
+        System.out.println("Hashcode of Employee4 " + employee4.hashCode());
+
         Employee employee5 = new Employee("Deepa","HR",65000);
+        System.out.println("Hashcode of Employee5 " + employee5.hashCode());
+
         Employee employee6 = new Employee("Jones","IT",65000);
+        System.out.println("Hashcode of Employee6 " + employee6.hashCode());
+
         Employee employee7 = new Employee("Wendy","CS",80000);
+        System.out.println("Hashcode of Employee7" + employee7.hashCode());
+
         Employee employee8 = new Employee("Kartik","HR",85000);
+        System.out.println("Hashcode of Employee8 " + employee8.hashCode());
+
         Employee employee9 = new Employee("Kiran","CS",55000);
+        System.out.println("Hashcode of Employee9 " + employee9.hashCode());
+
         Employee employee10 = new Employee("Deepa","HR",65000);
+        System.out.println("Hashcode of Employee10 " + employee10.hashCode());
 
         // ADD THE EMPLOYEE DATA
         employeeHashSet.add(employee1);
