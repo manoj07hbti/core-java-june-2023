@@ -1,8 +1,8 @@
 package collection.model;
 
-public class StudentExam {
+import java.util.Objects;
 
-    public static Object brnchName;
+public class StudentExam {
     String Name;
 
     String BranchName;
@@ -47,5 +47,18 @@ public class StudentExam {
 
     public void setMarks(int marks) {
         Marks = marks;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        StudentExam that = (StudentExam) o;
+        return RollNo == that.RollNo;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(RollNo);
     }
 }
