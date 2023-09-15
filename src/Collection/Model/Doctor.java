@@ -1,5 +1,7 @@
 package Collection.Model;
 
+import java.util.Objects;
+
 public class Doctor {
     String DoctorName;
     String DoctorDegree;
@@ -11,6 +13,19 @@ public class Doctor {
         DoctorDegree = doctorDegree;
         DoctorFees = doctorFees;
         DoctorAdd = doctorAdd;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Doctor doctor = (Doctor) o;
+        return Objects.equals(DoctorName, doctor.DoctorName) && Objects.equals(DoctorDegree, doctor.DoctorDegree) && Objects.equals(DoctorFees, doctor.DoctorFees) && Objects.equals(DoctorAdd, doctor.DoctorAdd);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(DoctorName, DoctorDegree, DoctorFees, DoctorAdd);
     }
 
     public String getDoctorName() {
