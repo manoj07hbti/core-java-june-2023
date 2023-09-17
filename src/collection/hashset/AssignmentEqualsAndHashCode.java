@@ -91,7 +91,7 @@ public HashSet<Doctor> doctorHashSet(){
     public static void main(String[] args) {
         AssignmentEqualsAndHashCode obj=new AssignmentEqualsAndHashCode();
         HashSet<Student> students=obj.studentSet();
-        System.out.println("..........Equals and hashcode method for student...........");
+        System.out.println("..........Equals and hashcode method for Student...........");
         for (Student var:students)
         {
             System.out.println("Student rollno is\t" +var.getRollNo()+ "\tName of student\t"+var.getName()+"\tage oof student\t"+var.getAge()+"\tsection oof student\t "+var.getSection());
