@@ -1,9 +1,7 @@
 package collection.linkedShashSet;
 
 import collection.model.Employ;
-import collection.model.Student;
 import collection.model.StudentExam;
-import method.Object;
 
 import java.util.LinkedHashSet;
 
@@ -146,6 +144,7 @@ public class DemoLinkdlistShashSet {
         salaryset.add(21000.8);
         salaryset.add(23000.67);
         salaryset.add(24000.87);
+        salaryset.add(234556.666);
         return salaryset;
 
 
