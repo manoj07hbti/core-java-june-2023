@@ -45,91 +45,87 @@ public class ArraylistTest {
         return stud;
     }
 
+
+
     public static void main(String[] args) {
         ArraylistTest at = new ArraylistTest();
         ArrayList<Student> st = at.student();
         for (Student var : st) {
 
-            System.out.println("Student RollNo is " + var.getRollNo() + " Name is" + var.getName() + "Marks " + var.getMarks() + "Branch " + var.getBranch());
+            System.out.println("Student RollNo is " + var.getRollNo() + " Name is" + var.getName() + " Marks " + var.getMarks() + " Branch " + var.getBranch());
         }
 
-
-
-
-
-            System.out.println();
-            System.out.println("2.Find out all student with branch cs");
-            for (Student var : st) {
-                if (var.getBranch().equalsIgnoreCase("CS")) {
-                    System.out.println("Student RollNo is " + var.getRollNo() + " Name is " + var.getName() + " Marks " + var.getMarks() + " Branch " + var.getBranch());
-                }
-
-
+        System.out.println();
+        System.out.println("2.Find out all student with branch cs");
+        for (Student var : st)
+        {
+            if (var.getBranch().equals("cs"))
+            {
+                System.out.println("Student RollNo is " + var.getRollNo() + " Name is " + var.getName() + " Marks " + var.getMarks() + " Branch " + var.getBranch());
             }
+        }
         System.out.println();
         System.out.println("3.lowest marks");
         double min = st.get(0).getMarks();
-        for (int i = 0; i < st.size(); i++) {
-            if (st.get(i).getMarks() < min) {
+        for (int i = 0; i < st.size(); i++)
+        {
+            if (st.get(i).getMarks() < min)
+            {
                 min = st.get(i).getMarks();
                 System.out.println(+min + " Roll no " + st.get(i).getRollNo() + " Name is" + st.get(i).getName() + " marks" + st.get(i).getMarks() + "branch " + st.get(i).getBranch());
             }
-
         }
         System.out.println();
         System.out.println("3.highest marks");
         double max = st.get(0).getMarks();
-        for (int i = 0; i < st.size(); i++) {
-
-            if (st.get(i).getMarks() > max) {
+        for (int i = 0; i < st.size(); i++)
+        {
+            if (st.get(i).getMarks() > max)
+            {
                 max = st.get(i).getMarks();
                 System.out.println(+ max + " Roll no " + st.get(i).getRollNo() + " Name is" + st.get(i).getName() + " marks" + st.get(i).getMarks() + "branch " + st.get(i).getBranch());
-
-
             }
-
+        }
+        System.out.println();
+        System.out.println("4.Find out student details which roll no between 3 to 7");
+        for (Student var : st)
+        {
+            int rollNo = var.getRollNo();
+            if (rollNo >= 3 && rollNo <= 7)
+            {
+                System.out.println("Student RollNo is " + var.getRollNo() + " Name is " + var.getName() + " Marks " + var.getMarks() + " Branch " + var.getBranch());
+            }
         }
 
-
+        System.out.println("5.Print all the student with do while ,while,for,adv loop");
         System.out.println();
-            System.out.println("4.Find out student details which roll no between 3 to 7");
-            for (Student var : st) {
-                int rollNo = var.getRollNo();
-                if (rollNo >= 3 && rollNo <= 7) {
-                    System.out.println("Student RollNo is " + var.getRollNo() + " Name is " + var.getName() + " Marks " + var.getMarks() + " Branch " + var.getBranch());
-                }
-            }
+        System.out.println("..........Using for loop......");
+        for (int i = 0; i < st.size(); i++)
+        {
+            System.out.println(" " + st.get(i).getRollNo() + " " + st.get(i).getName() + " " + st.get(i).getMarks() + " " + st.get(i).getBranch());
+        }
+        System.out.println();
+        System.out.println("..........Using while loop........");
+        int i = 0;
+        while (i < st.size())
+        {
 
-            System.out.println("5.Print all the student with do while ,while,for,adv loop");
-            System.out.println();
-            System.out.println("..........Using for loop......");
-            for (int i = 0; i < st.size(); i++) {
-                System.out.println(" " + st.get(i).getRollNo() + " " + st.get(i).getName() + " " + st.get(i).getMarks() + " " + st.get(i).getBranch());
-            }
-
-            System.out.println();
-            System.out.println("Using while loop");
-            int i = 0;
-            while (i < st.size()) {
-
-                System.out.println(" " + st.get(i).getRollNo() + " " + st.get(i).getName() + " " + st.get(i).getMarks() + " " + st.get(i).getBranch());
-                i++;
-            }
-            System.out.println();
-            System.out.println("Using do while loop");
-            i = 0;
-            do {
-
-                System.out.println(" " + st.get(i).getRollNo() + " " + st.get(i).getName() + " " + st.get(i).getMarks() + " " + st.get(i).getBranch());
-                i++;
-            } while (i < st.size());
-            System.out.println();
-            System.out.println("Advanced for loop");
-            for (Student var : st) {
-
-                System.out.println("Student RollNo is " + var.getRollNo() + " Name is" + var.getName() + "Marks " + var.getMarks() + "Branch " + var.getBranch());
-            }
-
-
+            System.out.println(" " + st.get(i).getRollNo() + " " + st.get(i).getName() + " " + st.get(i).getMarks() + " " + st.get(i).getBranch());
+            i++;
+        }
+        System.out.println();
+        System.out.println("..........Using do while loop........");
+        i = 0;
+        do
+        {
+            System.out.println(" " + st.get(i).getRollNo() + " " + st.get(i).getName() + " " + st.get(i).getMarks() + " " + st.get(i).getBranch());
+            i++;
+        } while (i < st.size());
+        System.out.println();
+        System.out.println(".............Advanced for loop..........");
+        for (Student var : st)
+        {
+            System.out.println("Student RollNo is " + var.getRollNo() + " Name is" + var.getName() + "Marks " + var.getMarks() + "Branch " + var.getBranch());
         }
     }
+}

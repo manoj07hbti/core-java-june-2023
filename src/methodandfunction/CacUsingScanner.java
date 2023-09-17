@@ -40,7 +40,7 @@ public class CacUsingScanner {
         int a=0;
         int b=0;
         CacUsingScanner cus=new CacUsingScanner();
-        while (choice.equals("y"))
+
         {
 
 

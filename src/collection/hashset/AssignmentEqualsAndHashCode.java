@@ -105,7 +105,7 @@ public HashSet<Doctor> doctorHashSet(){
         }
         System.out.println();
         HashSet<Doctor> doctors=obj.doctorHashSet();
-        System.out.println("..........Equals and hashcode method for Doctor...........");
+        System.out.println("...........Equals and hashcode method for Doctor...........");
         for (Doctor var:doctors)
         {
             System.out.println("Doctor name\t"+var.getDrName()+"\tDegree\t"+var.getDegree()+"\tSpecialization\t"+var.getSpecialization()+"\tSalary\t"+var.getmSal());
