@@ -35,22 +35,22 @@ public class DemoLinkdlistShashSet {
 
         LinkedHashSet<Integer> set = new LinkedHashSet<>();
 
-        set.add(12);
-        set.add(13);
-        set.add(14);
-        set.add(15);
-        set.add(16);
-        set.add(17);
-        set.add(18);
-        set.add(19);
-        set.add(20);
-        set.add(21);
-        set.add(22);
-        set.add(23);
-        set.add(24);
-        set.add(25);
-        set.add(26);
-        set.add(27);
+        set.add(12846798);
+        set.add(13235678);
+        set.add(14345789);
+        set.add(15885438);
+        set.add(16235688);
+        set.add(17245687);
+        set.add(18986544);
+        set.add(19356899);
+        set.add(20765544);
+        set.add(21347896);
+        set.add(22976555);
+        set.add(23245678);
+        set.add(24437808);
+        set.add(25379075);
+        set.add(26577876);
+        set.add(27234587);
         return set;
     }
 
