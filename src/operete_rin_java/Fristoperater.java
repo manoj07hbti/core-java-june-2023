@@ -17,7 +17,7 @@ public class Fristoperater {
             System.out.println(" student is not science baground");
         }
 // TRUE AND FALSE STATMENT
-marks = 55;
+        marks = 55;
         Subject = "science";
         if (marks >= 60 && Subject == "science") {
 
@@ -87,7 +87,41 @@ marks = 55;
 
         } else {
             System.out.println("FALSE:Person is not ellegebal for voting");
+
         }
+ String subject= "hindi";
+ int number = 33;
+ if (subject=="hindi" && number>33){
+
+     System.out.println("true:print student subject is:"+subject);
+ }else
+     System.out.println("True : print student number is: "+number);
+
+ subject= "hindi";
+    number = 30;
+        if (subject=="hindi" && number>33){
+
+            System.out.println("true:print student subject is:"+subject);
+        }else
+            System.out.println("False: print student number is: "+number);
+
+        subject= "math";
+        number = 33;
+        if (subject=="hindi" && number>33){
+
+            System.out.println("true:print student subject is:"+subject);
+        }else
+            System.out.println("False: print student number is: "+number);
+
+
+        subject= "math";
+        number = 30;
+        if (subject=="hindi" && number>33){
+
+            System.out.println("true:print student subject is:"+subject);
+        }else
+            System.out.println("False: print student number is: "+number);
+
 
     }
 }

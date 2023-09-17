@@ -48,7 +48,6 @@ public class EmployHashset {
         EmployHashset obj = new EmployHashset();
         HashSet<Employ> employs = obj.Employ();
         for (Employ var : employs) {
-
             System.out.println("print employ Name :" + var.getName() + "  Company:" + var.getWorkPlace() + "Salary:" + var.getSalary() + "Id :" + var.getID());
         }
 
