@@ -1,8 +1,7 @@
-package sep_test;
+package collection.sep_test;
 
 import collection.model.Student;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class Senior {
@@ -62,24 +61,24 @@ public class Senior {
                 }
             }
             //3. find out student with highest and lowest marks :
-
+            ArrayList<Student> Student1 = obj.createStudentList();
             System.out.println(" ");
             System.out.println("***Using Advanced for loop***");
             System.out.println(" ");
             System.out.println("Finding Highest And Lowest Mark");
             System.out.println(" ");
-            Student max = Student.get(1);
-            Student min = Student.get(1);
+            Student max = Student1.get(0);
+            Student min = Student1.get(0);
 
-            for (Student alumni : Student) {
+            for (Student student : Student1) {
 
-                if (alumni.mark > max.mark) {
-                    max = alumni;
+                if (student.mark > max.mark) {
+                    max = student;
                 }
             }
-            for (Student alumni : Student) {
-                if (alumni.mark < min.mark) {
-                    min = alumni;
+            for (Student student : Student1) {
+                if (student.mark < min.mark) {
+                    min = student;
                 }
             }
             System.out.println("Student with Highest Mark " + max.mark);
@@ -88,32 +87,34 @@ public class Senior {
 
 
             // 4. Find and print students between roll no 3 to 7
+            ArrayList<Student> Student2 = obj.createStudentList();
             System.out.println(" ");
             System.out.println("Finding students between roll_no 3 to 7");
             System.out.println(" ");
             System.out.println("***Using Advanced for loop***");
             System.out.println(" ");
-            for (Student alumni : Student) {
-                if (alumni.roll_no >= 3 && alumni.roll_no <= 7) {
-                    System.out.println("Name of student :" + alumni.name + "\nroll_no is :" + alumni.roll_no);
+            for (Student student : Student2) {
+                if (student.roll_no >= 3 && student.roll_no <= 7) {
+                    System.out.println("Name of student :" + student.name + "\nroll_no is :" + student.roll_no);
                 }
             }
             //5. Print all students with for,while ,do while and advance.
+            ArrayList<Student> Student3 = obj.createStudentList();
             System.out.println(" ");
             System.out.println("Print all students with using for,while ,do while and advance loop");
             System.out.println(" ");
             System.out.println("***Using for loop***");
             System.out.println("  ");
-            for (int i = 0; i < Student.size(); i++) {
-                System.out.println("Name is :" + Student.get(i).getName());
+            for (int i = 0; i < Student3.size(); i++) {
+                System.out.println("Name is :" + Student3.get(i).getName());
             }
             System.out.println(" ");
             System.out.println("***Using while loop***");
             System.out.println(" ");
 
             int j = 0;
-            while (j < Student.size()) {
-                System.out.println("Name is :" + Student.get(j).getName());
+            while (j < Student3.size()) {
+                System.out.println("Name is :" + Student3.get(j).getName());
                 j++;
 
             }
@@ -123,15 +124,15 @@ public class Senior {
 
             int k = 0;
             do {
-                System.out.println("Name is :" + Student.get(k).getName());
+                System.out.println("Name is :" + Student3.get(k).getName());
                 k++;
-            } while (k < Student.size());
+            } while (k < Student3.size());
 
             System.out.println(" ");
             System.out.println("***Using Advanced for loop***");
             System.out.println(" ");
-            for (Student alumni : Student) {
-                System.out.println("Name is :" + alumni.getName() + " \nRoll_No is :" + alumni.getRoll_no() + " \nMark is :" + alumni.getMark() + " \nBranch is :" + alumni.getBranch());
+            for (Student student : Student3) {
+                System.out.println("Name is :" + student.getName() + " \nRoll_No is :" + student.getRoll_no() + " \nMark is :" + student.getMark() + " \nBranch is :" + student.getBranch());
 
             }
 
