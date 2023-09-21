@@ -54,6 +54,7 @@ public class ArraylistUsingScanner {
                   section = sc1.nextLine();
 
                 Student student=new Student(rollNo,name,age,section);
+                  studentArrayList.add(student);
                   System.out.println("press  y to continue or exit too any key");
                   Scanner sc4 = new Scanner(System.in);
                   choice = sc4.nextLine();
@@ -63,18 +64,13 @@ public class ArraylistUsingScanner {
 
                   //    for (Student var:studentDataWithInput)
               }
-            for (Student var:studentArrayList)
-            {
-                System.out.println("roll no"+var.getRollNo()+"Name "+var.getName()+ " , "+"Age "+var.getAge()+","+"Section "+var.getSection());
 
-
-            }
 
           }
-          System.out.println("All Students Data Entered:");
+         /* System.out.println("All Students Data Entered:");
           for (Student student : studentArrayList) {
               System.out.println("Name: " + student.getName() + "Age: " + student.getAge() + "Section: " + student.getSection());
-          }
+          }*/
 
           return studentArrayList;
       }
@@ -93,7 +89,7 @@ public class ArraylistUsingScanner {
 
         System.out.println("All Students Data Entered:");
         for (Student student : students) {
-            System.out.println("Name: " + student.getName() + "Age: " + student.getAge() + "Section: " + student.getSection());
+            System.out.println("rollNo: "+student.getRollNo()+"\tName: " + student.getName() + "\tAge: " + student.getAge() + "\tsection: " + student.getSection());
         }
     }
 
