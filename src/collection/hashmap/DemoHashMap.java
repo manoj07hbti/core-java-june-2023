@@ -1,6 +1,7 @@
 package collection.hashmap;
 
 import java.util.HashMap;
+import java.util.Set;
 
 
 public class DemoHashMap {
@@ -34,6 +35,15 @@ public class DemoHashMap {
         map.put(null,"Programmer...");
 
         System.out.println("Printing mad with null key :"+map);
+
+        //PRINTING ALL ELEMENTS OF HASHMAP
+        Set<Integer> keys= map.keySet(); // it will return all keys of hashmap in form of Set
+
+        for(Integer key: keys){
+
+            System.out.println("Printing Map using Keys :"+map.get(key));
+        }
+
     }
 
     public void createAnotherMap(){
@@ -47,6 +57,13 @@ public class DemoHashMap {
         hashMap.put(null,"IBM ISL");
 
         System.out.println(hashMap);
+
+        Set <String> keys=hashMap.keySet();
+
+        for(String key: keys){
+
+            System.out.println("Printing String Map: "+hashMap.get(key));
+        }
 
     }
 
