@@ -55,9 +55,10 @@ public class DemoCollegeMap {
             System.out.println("Printing college data: ");
             ArrayList<Student> students= collegeData.get(key);
 
-             for(int i=0; i<students.size(); i++){
-
-                 System.out.println("Printing college data : "+key +" : "+students.get(i).getName() +" , "+students.get(i).getSection());
+             for(int i=0; i<students.size(); i++) {
+                 if (students.get(i).getSection().equals("IT")) {
+                     System.out.println("Printing college data : " + key + " : " + students.get(i).getName() + " , " + students.get(i).getSection());
+                 }
              }
 
         }
