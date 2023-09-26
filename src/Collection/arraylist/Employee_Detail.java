@@ -1,4 +1,4 @@
-package Collection;
+package Collection.arraylist;
 
 import Collection.Model.Employee;
 
@@ -33,7 +33,7 @@ public class Employee_Detail {
             System.out.println("Using For Loop Printing Employee Name is : " + Employee.get(i).getEmployee_Name());
             System.out.println("Using For Loop Printing Employee ID is : " + Employee.get(i).getEmployeeId());
             System.out.println("Using For Loop Printing Employee JOb Role  is : " + Employee.get(i).getEmployee_Job_Role());
-            System.out.println("Using For Loop Printing Employee Name is : " + Employee.get(i).getEmployee_Salary());
+            System.out.println("Using For Loop Printing Employee Salary is : " + Employee.get(i).getEmployee_Salary());
 
         }
         int i = 0;

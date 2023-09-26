@@ -1,4 +1,4 @@
-package Collection;
+package Collection.arraylist;
 
 import java.util.ArrayList;
 
@@ -56,6 +56,11 @@ public class StudentDetail {
             System.out.println(" Before Delete Printing Student Detail is : " + Student.get(i) + "  Index :" + i);
 
         }
+        int k=0;
+        while (k<Student.size()){
+            System.out.println("Using while loop Printing Student Detail is : " +Student.get(k));
+            k++;
+        }
         // Remove Data
         Student.remove(1);
         for (int i = 0; i < Student.size(); i++) {
@@ -69,20 +74,18 @@ public class StudentDetail {
 
         }
         // Using Do While Loop
-        int i = 0;
+        int j = 0;
         do {
-            System.out.println("Using Do While Loop Student Data Printing Student Detail is : " + Student.get(i));
-            i++;
+            System.out.println("Using Do While Loop Student Data Printing Student Detail is : " + Student.get(j));
+            j++;
 
         }
 
-        while (i < Student.size());
+        while (j < Student.size());
 
         System.out.println();
 
     }
-
-
     public static void main(String[] args) {
         StudentDetail obj = new StudentDetail();
         obj.Student();
