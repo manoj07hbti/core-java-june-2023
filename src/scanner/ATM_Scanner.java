@@ -1,4 +1,4 @@
-package method.return_type;
+package scanner;
 
 import java.util.Scanner;
 
@@ -6,7 +6,9 @@ public class ATM_Scanner {
 
     public boolean ATM(String user, String pin, int amount) {
         if (user.equals("1234") && pin.equals("1209")) {
-            for (int i = 1; i < amount; i++) {
+            int i = 1;
+            while (i < amount) {
+                i++;
             }
             return true;
 
