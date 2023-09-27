@@ -1,8 +1,8 @@
-package method.return_type;
+package scanner;
 
 import java.util.Scanner;
 
-public class CalculatorApp {
+public class _1_CalculatorApp {
 
 
     public int add(int a, int b) {//TODO<---------with input and return
@@ -17,22 +17,22 @@ public class CalculatorApp {
         return a * b;
     }
 
-    public int div(int a, int b) {
-        return a / b;
+    public double div(int a, int b) {
+        return (double) a / b;
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Please Enter your Choice :");
-        int choice = scanner.nextInt();
+
         System.out.println("Please Enter Value of a :");
         int a = scanner.nextInt();
         System.out.println("Please Enter Value of b :");
         int b = scanner.nextInt();
+        System.out.println("Please Enter your Choice :\n1.add\n2.sub\n3.multi\n4.div");
+        int choice = scanner.nextInt();
 
-
-        CalculatorApp obj = new CalculatorApp();
+        _1_CalculatorApp obj = new _1_CalculatorApp();
 
 
         if (choice == 1) {
@@ -45,7 +45,7 @@ public class CalculatorApp {
             int result = obj.multi(a, b);
             System.out.println("Multiplication of Given Numbers is :" + result);
         } else {
-            int result = obj.div(a, b);
+            double result = obj.div(a, b);
             System.out.println("Division of Given Numbers is :" + result);
         }
     }
