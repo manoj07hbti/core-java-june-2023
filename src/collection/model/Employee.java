@@ -8,6 +8,23 @@ public class Employee {
     String empName;
     int age;
     double sal;
+    String companyName;
+
+    public String getCompanyName() {
+        return companyName;
+    }
+
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
+    }
+
+    public Employee(String empId, String empName, int age, double sal, String companyName) {
+        this.empId = empId;
+        this.empName = empName;
+        this.age = age;
+        this.sal = sal;
+        this.companyName = companyName;
+    }
 
     public Employee(String empId, String empName, int age, double sal) {
         this.empId = empId;
