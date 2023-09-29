@@ -34,6 +34,7 @@ public class UniqueEmployeeData {
         CompanyData Emp22 = new CompanyData("IBM", "Rekha Sharma", "UP01", 46060.54);
         CompanyData Emp23 = new CompanyData("TCS", "Pinki", "UP80", 96000.54);
         CompanyData Emp24 = new CompanyData("IBM", "Rekha Sharma", "UP01", 46060.54);
+        CompanyData Emp25 = new CompanyData("IBM", "Rekha Sharma", "UP01", 46060.54);
 
         HashSet<CompanyData> Employee = new HashSet<>();
 
@@ -64,6 +65,7 @@ public class UniqueEmployeeData {
         Employee.add(Emp22);
         Employee.add(Emp23);
         Employee.add(Emp24);
+        Employee.add(Emp25);
 
         Employees.put("Employees", Employee);
 
