@@ -24,6 +24,7 @@ public class HashMap2 {
         map.put("CNG ", 75);
         System.out.println(" update Price of CNG : " + map);
 
+
     }
 
     public void CreateHashMap2() {

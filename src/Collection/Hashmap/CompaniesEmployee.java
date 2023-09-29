@@ -35,7 +35,7 @@ public class CompaniesEmployee {
 
         CompaniesData.put("IBM", IBMEmployeeList);
 
-
+        // create data of TCS Company's Employee;
         ArrayList<CorporateEmployee> TCSEmployeeList = new ArrayList<>();
         CorporateEmployee Emp11 = new CorporateEmployee("Manish Kumar", "CPOPM2470M", 60065.87);
         CorporateEmployee Emp12 = new CorporateEmployee("Sandee Sharma", "CPOPM2471M", 70076.87);
@@ -60,7 +60,7 @@ public class CompaniesEmployee {
 
 
         CompaniesData.put("TCS", TCSEmployeeList);
-
+        // create data of INFOSYS Company's Employee;
         ArrayList<CorporateEmployee> INFOSYSEmployeeList = new ArrayList<>();
 
         CorporateEmployee Emp21 = new CorporateEmployee("Praveen Kumar", "CPOPM2480M", 60465.87);
