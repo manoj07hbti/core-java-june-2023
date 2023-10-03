@@ -4,6 +4,9 @@ import collection.model.Employees;
 
 import java.util.*;
 
+
+
+
 public class NewHashMap {
 
     public LinkedHashMap<String, LinkedHashSet<Employees>> empHashMap() {
@@ -199,7 +202,7 @@ public class NewHashMap {
         return EMPRecord;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         NewHashMap obj = new NewHashMap();
 
@@ -207,6 +210,7 @@ public class NewHashMap {
 
         //TODO 1.Insert all the Data using Scanner With IBM,TCS,WIPRO and CTS and display employee who is having salary greater than 50,000 and belongs to pune city for IBM and TCS.
         System.out.println("Answer No.1");
+        System.out.println(" ");
         System.out.println("Printing all Companies record whose working in Pune and Salary is Greater than 50,000: ");
 
         Set<String> recordSet = data1.keySet();
@@ -224,9 +228,73 @@ public class NewHashMap {
             }
         }
         //TODO 2.Write a method which will find the highest salary employee and lowest salary employee.
-        LinkedHashMap<String, LinkedHashSet<Employees>> data2 = obj.empHashMap();
-        Set<String> maxSalary = data2.keySet();
-        Object maxSalary1 = Collections.max(data2.entrySet(), Map.Entry.comparingByKey()).getKey();
+        System.out.println("Answer No.2");
+        List<Employees> list = new ArrayList<>();
+        Employees record61 = new Employees("Jatin", 55000, "AGRA", "AI");
+        Employees record62 = new Employees("Raj", 55000, "PUNE", "IT");
+        Employees record63 = new Employees("Mohit", 50000, "DELHI", "SALES");
+        Employees record64 = new Employees("Ojal", 57000, "AGRA", "AI");
+        Employees record65 = new Employees("Vandana", 50000, "DELHI", "STEEL");
+        Employees record66 = new Employees("Priya", 57000, "PUNE", "STEEL");
+        Employees record67 = new Employees("Nishu", 56000, "PUNE", "HR");
+        Employees record68 = new Employees("Shivam", 55000, "DELHI", "SALES");
+        Employees record69 = new Employees("Mukul", 58000, "MATHURA", "HR");
+        Employees record70 = new Employees("Shivani", 54000, "DELHI", "STEEL");
+        Employees record71 = new Employees("Jatin", 55000, "AGRA", "AI");
+        Employees record72 = new Employees("Raj", 55000, "PUNE", "IT");
+        Employees record73 = new Employees("Mohit", 50000, "DELHI", "SALES");
+        Employees record74 = new Employees("Ojal", 57000, "AGRA", "AI");
+        Employees record75 = new Employees("Vandana", 50000, "DELHI", "STEEL");
+        Employees record76 = new Employees("Priya", 57000, "PUNE", "STEEL");
+        Employees record77 = new Employees("Nishu", 56000, "PUNE", "HR");
+        Employees record78 = new Employees("Shivam", 55000, "DELHI", "SALES");
+        Employees record79 = new Employees("Mukul", 58000, "MATHURA", "HR");
+        Employees record80 = new Employees("Shivani", 54000, "DELHI", "STEEL");
+
+        list.add(record61);
+        list.add(record62);
+        list.add(record63);
+        list.add(record64);
+        list.add(record65);
+        list.add(record66);
+        list.add(record67);
+        list.add(record68);
+        list.add(record69);
+        list.add(record70);
+        list.add(record71);
+        list.add(record72);
+        list.add(record73);
+        list.add(record74);
+        list.add(record75);
+        list.add(record76);
+        list.add(record77);
+        list.add(record78);
+        list.add(record79);
+        list.add(record80);
+
+
+        double salary = 0;
+        Employees max = list.get(0);
+        Employees min = list.get(0);
+        System.out.println(" ");
+        System.out.println("Printing Highest Salary :");
+        list.sort((o61, o80) -> 0);
+        for (Employees data9 : list) {
+            if (data9.EmpSalary > max.EmpSalary) salary = data9.getEmpSalary();
+
+        }
+        System.out.println("Highest salary is: " + salary);
+        double salary1 = 0;
+
+        System.out.println(" ");
+        System.out.println("Printing Lowest Salary :");
+
+        list.sort((o61, o80) -> 0);
+        for (Employees data10 : list) {
+            if (data10.EmpSalary < min.EmpSalary) salary1 = data10.getEmpSalary();
+        }
+        System.out.println("Lowest salary is:" + salary1);
+        System.out.println(" ");
 
         //TODO 3.Display all companies employees Data company wise.
         LinkedHashMap<String, LinkedHashSet<Employees>> data3 = obj.empHashMap();
@@ -242,6 +310,7 @@ public class NewHashMap {
 
             }
         }
+        System.out.println(" ");
         //TODO  4.Display all employee Data who is having same city like Pune all employee Printed,then Agra all employee will be printed so on.
         LinkedHashMap<String, LinkedHashSet<Employees>> data4 = obj.empHashMap();
         Set<String> keys1 = data4.keySet();
@@ -254,17 +323,18 @@ public class NewHashMap {
 
             for (Employees employees : companiesRecord) {
                 if ("DELHI".equalsIgnoreCase(employees.getEmpCity())) {
-                    System.out.println("Printing DELHI's Record " + key +"|"+ employees.getEmpName());
+                    System.out.println("Printing DELHI's Record " + key + "|" + employees.getEmpName());
                 }
                 if ("PUNE".equalsIgnoreCase(employees.getEmpCity())) {
-                    System.out.println("Printing PUNE's Record " + key +"|"+ employees.getEmpName());
+                    System.out.println("Printing PUNE's Record " + key + "|" + employees.getEmpName());
 
                 }
                 if ("MATHURA".equalsIgnoreCase(employees.getEmpCity())) {
-                    System.out.println("Printing MATHURA's Record " + key +"|"+ employees.getEmpName());
+                    System.out.println("Printing MATHURA's Record " + key + "|" + employees.getEmpName());
 
-                }if ("AGRA".equalsIgnoreCase(employees.getEmpCity())) {
-                    System.out.println("Printing AGRA's Record " + key +"|"+ employees.getEmpName());
+                }
+                if ("AGRA".equalsIgnoreCase(employees.getEmpCity())) {
+                    System.out.println("Printing AGRA's Record " + key + "|" + employees.getEmpName());
 
                 }
 
