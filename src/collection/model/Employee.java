@@ -9,6 +9,28 @@ public class Employee {
     int age;
     double sal;
     String companyName;
+    String city;
+
+    public Employee(String empId, String empName, int age, double sal, String companyName, String city) {
+        this.empId = empId;
+        this.empName = empName;
+        this.age = age;
+        this.sal = sal;
+        this.companyName = companyName;
+        this.city = city;
+    }
+
+    public Employee() {
+
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
 
     public String getCompanyName() {
         return companyName;

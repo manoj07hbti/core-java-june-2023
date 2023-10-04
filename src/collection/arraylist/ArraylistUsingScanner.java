@@ -35,8 +35,7 @@ public class ArraylistUsingScanner {
           String name;
           int age;
           String section;
-          // Student student1 = null;
-          // Student student1 = null;
+
          Student student1 =new Student();
           {
               while (choice.equals("y")) {

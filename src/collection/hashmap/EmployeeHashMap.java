@@ -81,13 +81,17 @@ public class EmployeeHashMap {
       empData.put("INFSYS",infoEmployees);
 
 for (String key:empData.keySet()){
+
   System.out.println("Printing Emp Data");
   ArrayList<Employee> employees=empData.get(key);
-  for (int i=0;i<employees.size();i++)
-  {
-    System.out.println("DATA:" +key+":"+"EmpId"+":"+employees.get(i).getEmpId()+","+"Name"+":"+employees.get(i).getEmpName()+","+"Age"+":"+employees.get(i).getAge()+","+"Sal"+":"+employees.get(i).getSal());
-  }
+  for (int i=0;i<employees.size();i++) {
+    if (key.equalsIgnoreCase("TCS") || key.equalsIgnoreCase("IBM")) {
 
+      // if( (empData.equals(tcsEmployees) )&& (empData.equals(ibmEmployees))) {
+      System.out.println("DATA:" + key + ":" + "EmpId" + ":" + employees.get(i).getEmpId() + "," + "Name" + ":" + employees.get(i).getEmpName() + "," + "Age" + ":" + employees.get(i).getAge() + "," + "Sal" + ":" + employees.get(i).getSal());
+      // }
+    }
+  }
 }
 
 

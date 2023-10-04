@@ -10,49 +10,49 @@ public class EmployeeHashSet {
     {
         HashSet<Employee> emp=new HashSet<>();
       //  System.out.println("HashCode of 1 employee: " +employee1.hashCode());
-        Employee employee1=new Employee("A21","Ashok",28,65826.35);
+        Employee employee1=new Employee("A21","Ashok",28,65826.35,"tcs","pune");
 
         System.out.println("HashCode of 1 employee: " +employee1.hashCode());
 
-        Employee employee2=new Employee("A22","Niku",35,88000.85);
+        Employee employee2=new Employee("A22","Niku",35,88000.85,"tcs","pune");
         System.out.println("HashCode of 2 employee: " +employee2.hashCode());
 
-        Employee employee3=new Employee("A21","Ashok",28,65826.35);
+        Employee employee3=new Employee("A21","Ashok",28,65826.35,"tcs","pune");
         System.out.println("HashCode of 3 employee: " +employee3.hashCode());
 
 
-        Employee employee4=new Employee("A23","Nikita",35,88000.85);
+        Employee employee4=new Employee("A23","Nikita",35,88000.85,"tcs","pune");
         System.out.println("HashCode of 4 employee: " +employee4.hashCode());
 
 
-        Employee employee5=new Employee("A24","shreya",28,65826.35);
+        Employee employee5=new Employee("A24","shreya",28,65826.35,"tcs","pune");
         System.out.println("HashCode of 5 employee: " +employee5.hashCode());
 
 
-        Employee employee6=new Employee("A22","Niku",35,88000.85);
+        Employee employee6=new Employee("A22","Niku",35,88000.85,"tcs","pune");
         System.out.println("HashCode of 6 employee: " +employee6.hashCode());
 
 
-        Employee employee7=new Employee("A24","shreya",28,65826.35);
+        Employee employee7=new Employee("A24","shreya",28,65826.35,"tcs","pune");
         System.out.println("HashCode of 7 employee: " +employee7.hashCode());
 
 
-        Employee employee8=new Employee("A25","Chetan",35,88000.85);
+        Employee employee8=new Employee("A25","Chetan",35,88000.85,"tcs","pune");
         System.out.println("HashCode of 8 employee: " +employee8.hashCode());
 
 
-        Employee employee9=new Employee("A21","Ashok",28,65826.35);
+        Employee employee9=new Employee("A21","Ashok",28,65826.35,"tcs","pune");
         System.out.println("HashCode of 9 employee: " +employee9.hashCode());
 
-        Employee employee10=new Employee("A25","Chetan",35,88000.85);
+        Employee employee10=new Employee("A25","Chetan",35,88000.85,"tcs","pune");
         System.out.println("HashCode of 10 employee: " +employee10.hashCode());
 
 
-        Employee employee11=new Employee("A21","Ashok",28,65826.35);
+        Employee employee11=new Employee("A21","Ashok",28,65826.35,"tcs","pune");
         System.out.println("HashCode of 11 employee: " +employee11.hashCode());
 
 
-        Employee employee12=new Employee("A22","Niku",35,88000.85);
+        Employee employee12=new Employee("A22","Niku",35,88000.85,"tcs","pune");
         System.out.println("HashCode of 12 employee: " +employee12.hashCode());
 
 
