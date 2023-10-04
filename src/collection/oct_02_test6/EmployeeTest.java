@@ -133,6 +133,38 @@ public class EmployeeTest {
 
 
     }
+    public void displayEmployeesByCity(HashMap<String, ArrayList<Employee>> empData) {
+        System.out.println();
+        System.out.println("Employees grouped by city:");
+        HashMap<String, ArrayList<Employee>> employeesByCity = new HashMap<>();
+
+        for (ArrayList<Employee> employees : empData.values()) {
+            for (Employee employee : employees) {
+                String city = employee.getCity();
+
+                if (employeesByCity.containsKey(city)) {
+                    employeesByCity.get(city).add(employee);
+                } else {
+                    ArrayList<Employee> cityEmployees = new ArrayList<>();
+                    cityEmployees.add(employee);
+                    employeesByCity.put(city, cityEmployees);
+                }
+            }
+        }
+
+        for (String city : employeesByCity.keySet()) {
+            System.out.println("City: " + city);
+            ArrayList<Employee> cityEmployees = employeesByCity.get(city);
+
+            for (Employee employee : cityEmployees) {
+                System.out.println("Company: " + employee.getCompanyName() +
+                        ", EmpId: " + employee.getEmpId() +
+                        ", Name: " + employee.getEmpName() +
+                        ", Age: " + employee.getAge() +
+                        ", Salary: " + employee.getSal());
+            }
+        }
+    }
 
 
 
@@ -155,5 +187,6 @@ public class EmployeeTest {
         obj.findAndDisplayHighSalaryEmployees(employeeData);
         obj.findAndDisplayHighestSalaryEmployee(employeeData);
         obj.findEmployeeWithLowestSalary(employeeData);
+        obj.displayEmployeesByCity(employeeData);
     }
 }
