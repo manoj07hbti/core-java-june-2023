@@ -4,6 +4,7 @@ import collection.model.Employee;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Scanner;
 
 public class EmployeeTest {
@@ -52,7 +53,7 @@ public class EmployeeTest {
         return emp;
     }
 
-    public void findAndDisplayHighSalaryEmployees(HashMap<String, ArrayList<Employee>> empData) {
+    public void findAndDisplayGreterSalaryEmployees(HashMap<String, ArrayList<Employee>> empData) {
 
 
         System.out.println();
@@ -76,7 +77,7 @@ public class EmployeeTest {
 
     public void findAndDisplayHighestSalaryEmployee(HashMap<String, ArrayList<Employee>> empData) {
         System.out.println();
-        System.out.println();
+        System.out.println("2.1 Employee having HighestSalary  ");
 
         double highestSalary = Double.MIN_VALUE;
         Employee highestSalaryEmployee = null;
@@ -108,7 +109,7 @@ public class EmployeeTest {
 
     public void findEmployeeWithLowestSalary(HashMap<String, ArrayList<Employee>> empData) {
         System.out.println();
-        System.out.println();
+        System.out.println("2.2 Employee having LowestSalary");
 
         double lowestSalary = Double.MAX_VALUE;
         Employee lowestSalaryEmployee = null;
@@ -133,9 +134,45 @@ public class EmployeeTest {
 
 
     }
+    public void displayEmployeesByCompany(HashMap<String, ArrayList<Employee>> empData) {
+        System.out.println();
+        System.out.println("5.Employees grouped by Company:");
+        HashMap<String, ArrayList<Employee>> employeesByCompany = new HashMap<>();
+
+        for (ArrayList<Employee> employees : empData.values()) {
+            for (Employee employee : employees) {
+                String companyName = employee.getCompanyName();
+
+                if (employeesByCompany.containsKey(companyName)) {
+                    List<Employee> cityEmployees = employeesByCompany.get(companyName); // Retrieve the list for the city
+                    cityEmployees.add(employee); // Add the employee to the list
+
+                } else {
+                    ArrayList<Employee> cityEmployees = new ArrayList<>();
+                    cityEmployees.add(employee);
+                    employeesByCompany.put(companyName, cityEmployees);
+                }
+            }
+        }
+
+        for (String company: employeesByCompany.keySet()) {
+            System.out.println("CompanyName: " +company );
+            ArrayList<Employee> cityEmployees = employeesByCompany.get(company);
+
+            for (Employee employee : cityEmployees) {
+                System.out.println("CompanyName: " + employee.getCompanyName() +
+                        ", EmpId: " + employee.getEmpId() +
+                        ", Name: " + employee.getEmpName() +
+                        ", Age: " + employee.getAge() +
+                        ", Salary: " + employee.getSal());
+
+            }
+            System.out.println();
+        }
+    }
     public void displayEmployeesByCity(HashMap<String, ArrayList<Employee>> empData) {
         System.out.println();
-        System.out.println("Employees grouped by city:");
+        System.out.println("4.Employees grouped by city:");
         HashMap<String, ArrayList<Employee>> employeesByCity = new HashMap<>();
 
         for (ArrayList<Employee> employees : empData.values()) {
@@ -143,7 +180,9 @@ public class EmployeeTest {
                 String city = employee.getCity();
 
                 if (employeesByCity.containsKey(city)) {
-                    employeesByCity.get(city).add(employee);
+                    List<Employee> cityEmployees = employeesByCity.get(city); // Retrieve the list for the city
+                    cityEmployees.add(employee); // Add the employee to the list
+
                 } else {
                     ArrayList<Employee> cityEmployees = new ArrayList<>();
                     cityEmployees.add(employee);
@@ -163,6 +202,46 @@ public class EmployeeTest {
                         ", Age: " + employee.getAge() +
                         ", Salary: " + employee.getSal());
             }
+        }
+
+
+
+    }
+
+    public void displayEmployeesBySalary(HashMap<String, ArrayList<Employee>> empData) {
+        System.out.println();
+        System.out.println("5.Employees grouped by salary:");
+        HashMap<Double, ArrayList<Employee>> employeesBySalary = new HashMap<>();
+
+        for (ArrayList<Employee> employees : empData.values()) {
+            for (Employee employee : employees) {
+                Double salary = employee.getSal();
+
+                if (employeesBySalary.containsKey(salary)) {
+                    List<Employee> cityEmployees = employeesBySalary.get(salary); // Retrieve the list for the city
+                    cityEmployees.add(employee); // Add the employee to the list
+
+                } else {
+                    ArrayList<Employee> cityEmployees = new ArrayList<>();
+                    cityEmployees.add(employee);
+                    employeesBySalary.put(salary, cityEmployees);
+                }
+            }
+        }
+
+        for (Double Salary: employeesBySalary.keySet()) {
+            System.out.println("Salary: " + Salary);
+            ArrayList<Employee> cityEmployees = employeesBySalary.get(Salary);
+
+            for (Employee employee : cityEmployees) {
+                System.out.println("CompanyName: " + employee.getCompanyName() +
+                        ", EmpId: " + employee.getEmpId() +
+                        ", Name: " + employee.getEmpName() +
+                        ", Age: " + employee.getAge() +
+                        ", Salary: " + employee.getSal());
+
+            }
+            System.out.println();
         }
     }
 
@@ -184,9 +263,12 @@ public class EmployeeTest {
             }
         }
 
-        obj.findAndDisplayHighSalaryEmployees(employeeData);
+        obj.findAndDisplayGreterSalaryEmployees(employeeData);
         obj.findAndDisplayHighestSalaryEmployee(employeeData);
         obj.findEmployeeWithLowestSalary(employeeData);
+        obj.displayEmployeesByCompany(employeeData);
         obj.displayEmployeesByCity(employeeData);
+        obj.displayEmployeesBySalary(employeeData);
+
     }
 }
