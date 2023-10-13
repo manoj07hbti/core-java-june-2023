@@ -1,7 +1,6 @@
 package Collection.Hashmap;
 
 import Collection.Model.EmployeeData;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
@@ -61,7 +60,6 @@ public class EmployeeInformation {
             for (int i = 0; i < map.size(); i++) {
                 if (var.equals("IBM") || var.equals("TCS")) {
                     if (map.get(i).getEmployeeSalary() > 550000) {
-
                         System.out.println("Printing " + var + " Name : " + map.get(i).getEmployeeName() + " City  : " + map.get(i).getEmployeeCity() + " Salary : " + map.get(i).getEmployeeSalary() + " Dept : " + map.get(i).getEmployeeDept());
                     }
                 }
