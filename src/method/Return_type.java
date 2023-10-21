@@ -1,6 +1,6 @@
 package method;
 
-public class Demo_return_type {
+public class Return_type {
 
     // create a method which will provide addition of given number
     public int Addition(int a, int b) {
@@ -17,7 +17,7 @@ public class Demo_return_type {
     }
 
     public static void main(String[] args) {
-        Demo_return_type obj= new Demo_return_type();
+        Return_type obj= new Return_type();
         int result = obj.Addition(5,44);
         System.out.println("Addition is:" +result);
         String message=  obj.Invitation("Rohan");
