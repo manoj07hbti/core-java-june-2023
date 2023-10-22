@@ -1,6 +1,6 @@
 package collection.model;
 import java.util.Objects;
-public class Organization {
+public class Employeees {
 
 
     public String empName;
@@ -11,7 +11,7 @@ public class Organization {
     public String empCompany;
     public String empCity;
 
-    public Organization(String empName, String empID, int empAge, String empDept, double empSalary, String empCompany, String empCity) {
+    public Employeees(String empName, String empID, int empAge, String empDept, double empSalary, String empCompany, String empCity) {
         this.empName = empName;
         this.empID = empID;
         this.empAge = empAge;
@@ -21,11 +21,14 @@ public class Organization {
         this.empCity = empCity;
     }
 
+    public Employeees(String empName, String empDept, int empSal, String empCity) {
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Organization that = (Organization) o;
+        Employeees that = (Employeees) o;
         return empAge == that.empAge && Double.compare(that.empSalary, empSalary) == 0 && Objects.equals(empName, that.empName) && Objects.equals(empID, that.empID) && Objects.equals(empDept, that.empDept) && Objects.equals(empCompany, that.empCompany) && Objects.equals(empCity, that.empCity);
     }
 
