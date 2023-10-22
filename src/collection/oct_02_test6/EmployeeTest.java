@@ -144,22 +144,22 @@ public class EmployeeTest {
                 String companyName = employee.getCompanyName();
 
                 if (employeesByCompany.containsKey(companyName)) {
-                    List<Employee> cityEmployees = employeesByCompany.get(companyName); // Retrieve the list for the city
-                    cityEmployees.add(employee); // Add the employee to the list
+                    List<Employee> companyEmployees = employeesByCompany.get(companyName); // Retrieve the list for the city
+                    companyEmployees.add(employee); // Add the employee to the list
 
                 } else {
-                    ArrayList<Employee> cityEmployees = new ArrayList<>();
-                    cityEmployees.add(employee);
-                    employeesByCompany.put(companyName, cityEmployees);
+                    ArrayList<Employee> companyEmployees = new ArrayList<>();
+                    companyEmployees.add(employee);
+                    employeesByCompany.put(companyName, companyEmployees);
                 }
             }
         }
 
         for (String company: employeesByCompany.keySet()) {
             System.out.println("CompanyName: " +company );
-            ArrayList<Employee> cityEmployees = employeesByCompany.get(company);
+            ArrayList<Employee> companyEmployees = employeesByCompany.get(company);
 
-            for (Employee employee : cityEmployees) {
+            for (Employee employee : companyEmployees) {
                 System.out.println("CompanyName: " + employee.getCompanyName() +
                         ", EmpId: " + employee.getEmpId() +
                         ", Name: " + employee.getEmpName() +
@@ -178,6 +178,11 @@ public class EmployeeTest {
         for (ArrayList<Employee> employees : empData.values()) {
             for (Employee employee : employees) {
                 String city = employee.getCity();
+
+
+//                if (employeesByCity.containsKey(city)) {
+//                    employeesByCity.get(city).add(employee);
+//                }
 
                 if (employeesByCity.containsKey(city)) {
                     List<Employee> cityEmployees = employeesByCity.get(city); // Retrieve the list for the city
@@ -218,22 +223,22 @@ public class EmployeeTest {
                 Double salary = employee.getSal();
 
                 if (employeesBySalary.containsKey(salary)) {
-                    List<Employee> cityEmployees = employeesBySalary.get(salary); // Retrieve the list for the city
-                    cityEmployees.add(employee); // Add the employee to the list
+                    List<Employee> salEmployees = employeesBySalary.get(salary); // Retrieve the list for the Salary
+                    salEmployees.add(employee); // Add the employee to the list
 
-                } else {
-                    ArrayList<Employee> cityEmployees = new ArrayList<>();
-                    cityEmployees.add(employee);
-                    employeesBySalary.put(salary, cityEmployees);
+                }else {
+                    ArrayList<Employee> salEmployees = new ArrayList<>();
+                    salEmployees.add(employee);
+                    employeesBySalary.put(salary, salEmployees);
                 }
             }
         }
 
         for (Double Salary: employeesBySalary.keySet()) {
             System.out.println("Salary: " + Salary);
-            ArrayList<Employee> cityEmployees = employeesBySalary.get(Salary);
+            ArrayList<Employee> salEmployees = employeesBySalary.get(Salary);
 
-            for (Employee employee : cityEmployees) {
+            for (Employee employee : salEmployees) {
                 System.out.println("CompanyName: " + employee.getCompanyName() +
                         ", EmpId: " + employee.getEmpId() +
                         ", Name: " + employee.getEmpName() +
@@ -244,7 +249,6 @@ public class EmployeeTest {
             System.out.println();
         }
     }
-
 
 
     public static void main(String[] args) {
