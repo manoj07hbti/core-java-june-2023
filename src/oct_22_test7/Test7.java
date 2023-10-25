@@ -29,29 +29,56 @@ public void pattern(int m)
         }
     }
 }
-public void countOccurrenceAr(int arr[]){
+//public void countOccurrenceAr(int arr[]){
+//
+//    Arrays.sort(arr);
+//    for (int i=0; i<arr.length-1;i++)
+//    {
+//        if (i!=arr.length-1)
+//        {
+//            int c=1;
+//            for (int j=i+1;j< arr.length;j++)
+//            {
+//
+//                try
+//                {
+//                if (arr[i]==arr[j])
+//                {
+//                    c++;
+//                }else {
+//                    break;
+//                }
+//                System.out.println(arr[i]+"-->"+c);
+//                i = i + (c - 1);
+//
+//            }
+//                catch(ArrayIndexOutOfBoundsException e){
+//                    System.out.println("Exception occurs"+e);
+//                }
+//            }
+//
+//        }
+//    }
+//}
 
-    Arrays.sort(arr);
-    for (int i=0; i<arr.length-1;i++)
-    {
-        if (i!=arr.length-1)
-        {
-            int c=1;
-            for (int j=i+1;j< arr.length;j++)
-            {
-                if (arr[i]==arr[j])
-                {
-                    c++;
-                }else {
-                    break;
-                }
-                System.out.println(arr[i]+"-->"+c);
-                i = i + (c - 1);
 
+    public void countOccurrenceAr(int arr[]) {
+        Arrays.sort(arr);
+
+        int i = 0;
+        while (i < arr.length) {
+            int c = 1;
+            int j = i + 1;
+
+            while (j < arr.length && arr[i] == arr[j]) {
+                c++;
+                j++;
             }
+
+            System.out.println(arr[i] + "-->" + c);
+            i = j;
         }
     }
-}
 
 public void primeNo()
 {
