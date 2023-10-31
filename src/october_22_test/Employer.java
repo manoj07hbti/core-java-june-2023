@@ -46,6 +46,7 @@ public class Employer {
 
             Employeees employeees = new Employeees(empID, empName, empAge, empDept, empSalary, empCompany, empCity);
 
+            // Check if the company already exists in the map
             if (employee.containsKey(empCompany)) {
                 employee.get(empCompany).add(employeees);
             } else {
@@ -53,6 +54,7 @@ public class Employer {
                 organizations.add(employeees);
                 employee.put(empCompany, organizations);
             }
+            // Check if the salary already exists in the map
             if (employee1.containsKey(empSalary)) {
                 employee1.get(empSalary).add(employeees);
             } else {
@@ -96,6 +98,7 @@ public class Employer {
     }
 
     public void findSameSalaryEmployeeData(LinkedHashMap<String, ArrayList<Employeees>> sameSalaryEmployee) {
+
         System.out.println(" ");
         System.out.println("Employee Whose Having same Salary :");
         LinkedHashMap<Double, ArrayList<Employeees>> sameSalaryEmployees = new LinkedHashMap<>();
@@ -138,3 +141,52 @@ public class Employer {
         obj.findSameSalaryEmployeeData(empRecord);
     }
 }
+/** VERY IMPORTANT
+ * ArrayList<Employeees> ibmEmpList= sameSalaryEmployee.get("IBM");
+ ArrayList<Employeees> tcsEmpList= sameSalaryEmployee.get("TCS");
+ ArrayList<Employeees> infosysEmpList= sameSalaryEmployee.get("Infosys");
+
+ ArrayList<Employeees> sameSalaryEmp= new ArrayList<>();
+
+ for( Employeees var1: ibmEmpList){
+
+ for(Employeees var2:tcsEmpList){
+
+ if(var1.getEmpSalary()==var2.getEmpSalary()){
+
+ //
+ sameSalaryEmp.add(var1);
+ sameSalaryEmp.add(var2);
+ }
+ }
+
+ }
+ for( Employeees var1: ibmEmpList){
+
+ for(Employeees var2:infosysEmpList){
+
+ if(var1.getEmpSalary()==var2.getEmpSalary()){
+
+ //
+ sameSalaryEmp.add(var1);
+ sameSalaryEmp.add(var2);
+ }
+ }
+
+ }
+ for( Employeees var1: tcsEmpList){
+
+ for(Employeees var2:infosysEmpList){
+
+ if(var1.getEmpSalary()==var2.getEmpSalary()){
+
+ //
+ sameSalaryEmp.add(var1);
+ sameSalaryEmp.add(var2);
+ }
+ }
+ for (Employeees Salary : sameSalaryEmp) {
+ System.out.println("Name is " + Salary.getEmpName() + "|" + " Company is " + Salary.getEmpCompany() + "|" + " Salary is " + Salary.getEmpSalary());
+
+ }
+ }*/

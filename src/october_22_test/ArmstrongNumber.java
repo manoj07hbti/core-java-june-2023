@@ -2,7 +2,7 @@ package october_22_test;
 
 public class ArmstrongNumber {
     public static void main(String[] args) {
-        int num = 153, number, temp, total = 0;
+        int num = 371, number, temp, total = 0;
         number = num;
         while (number != 0) {
             temp = number % 10;
