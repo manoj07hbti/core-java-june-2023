@@ -20,4 +20,8 @@ String name="!22234";
         StaticQnA.m1();
         StaticQnA.m1("jatin");
     }
+
+
+
+
 }
