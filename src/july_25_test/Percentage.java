@@ -13,4 +13,7 @@ public class Percentage {
     public static double calculatePercentage(double percentage,double number){
         return  (percentage/100)*number;
     }
-}
+
+        }
+
+        
